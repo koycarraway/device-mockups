@@ -16,21 +16,74 @@ import Img from "gatsby-image"
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+      image1: file(relativePath: { eq: "Apple@2x.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 820, quality: 100) {
             ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      image2: file(relativePath: { eq: "Google@2x.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 820, quality: 100) {
+            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      image3: file(relativePath: { eq: "Samsung@2x.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 820, quality: 100) {
+            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      image4: file(relativePath: { eq: "More@2x.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 820, quality: 100) {
+            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluidLimitPresentationSize
           }
         }
       }
     }
   `)
 
-  if (!data?.placeholderImage?.childImageSharp?.fluid) {
-    return <div>Picture not found</div>
-  }
+  // if (!data?.placeholderImage?.childImageSharp?.fluid) {
+  //   return <div>Picture not found</div>
+  // }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img />
 }
+
+// export const deviceShowcaseImage = graphql`
+//   fragment deviceShowcaseImage on File {
+//     childImageSharp {
+//       fluid(maxWidth: 820, quality: 100) {
+//         ...GatsbyImageSharpFluid
+//         ...GatsbyImageSharpFluidLimitPresentationSize
+//       }
+//     }
+//   }
+// `
+
+// export const query = graphql`
+//   query {
+//     image1: file(relativePath: { eq: "Apple@2x.png" }) {
+//       ...deviceShowcaseImage
+//     }
+//     image2: file(relativePath: { eq: "Google@2x.png" }) {
+//       ...deviceShowcaseImage
+//     }
+//     image3: file(relativePath: { eq: "Samsung@2x.png" }) {
+//       ...deviceShowcaseImage
+//     }
+//     image4: file(relativePath: { eq: "More@2x.png" }) {
+//       ...deviceShowcaseImage
+//     }
+//   }
+// `
 
 export default Image

@@ -1,21 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
+import DeviceShowcase from "../components/device-showcase"
 import SEO from "../components/seo"
+
+import AppleImage from "../images/Apple@2x.png"
+import GoogleImage from "../images/Google@2x.png"
+import SamsungImage from "../images/Samsung@2x.png"
+import MoreImage from "../images/More@2x.png"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <DeviceShowcase title="Apple" subtitle="iPhone SE · iPhone 11 Pro · iPhone 12 Mini · iPhone 12 | 12 Pro · iPhone 12 Pro Max" image={AppleImage} />
+    <DeviceShowcase title="Google" subtitle="Pixel 2 · Pixel 2XL · Pixel 4 · Pixel 4a · Pixel 5" image={GoogleImage}/>
+    <DeviceShowcase title="Samsung" subtitle="Galaxy A50 · Galaxy Note20 5G · Galaxy Note20 Ultra · Galaxy S20 5G" image={SamsungImage} />
+    <DeviceShowcase title="and more..." subtitle="OnePlus 7T Pro 5G · OnePlus 8 Pro · Sony Xperia 1 II" image={MoreImage} />
   </Layout>
 )
 
