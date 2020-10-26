@@ -24,7 +24,7 @@ const Header = ({ siteTitle }) => (
         </a>
       </div>
       <div className={`mt-12 sm:mt-15 md:mt-20`}>
-        <h4 className={`text-base font-medium text-gray-700`}>Available for</h4>
+        <h2 className={`text-base font-medium text-gray-700`}>Available for</h2>
         <div className={`flex w-48 m-auto`}>
           <img className={`flex-1`} src={SketchLogo} alt="Sketch" />
           <img className={`flex-1`} src={FigmaLogo} alt="Figma" />
