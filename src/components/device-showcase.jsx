@@ -6,7 +6,7 @@ const DeviceShowcase = (props) => (
     {/* <Image /> */}
     <img src={props.image} alt="Device Showcase" className={`m-auto`} width="820px" />
     {/* <Img /> */}
-    <div className={`-mt-16 sm:-mt-20 md:-mt-24`} >
+    <div className={`-mt-16 sm:-mt-20 md:-mt-24 mx-4`} >
       <h1 className={`mb-2 sm:mb-4 text-lg sm:text-xl md:text-xxl font-semibold`} >
         {props.title}
       </h1>
