@@ -4,10 +4,11 @@ import React from "react"
 import SketchLogo from "../images/sketch.svg"
 import FigmaLogo from "../images/figma.svg"
 import XDLogo from "../images/adobe-xd.svg"
+import HeroBG from "../images/hero-bg@2x.png"
 
 const Header = ({ siteTitle }) => (
-  <header className={`mt-10`} >
-    <div className={`m-auto text-center max-w-xl py-10 px-4`} >
+  <header className={`bg-cover bg-bottom bg-no-repeat`} style={{backgroundImage: `url(${HeroBG})`}} >
+    <div className={`m-auto text-center max-w-xl pt-20 pb-4 md:pb-7 px-4`} >
       <h1 className={`mb-0 font-semibold text-xxl md:text-xxxl text-white text-opacity-25`} >
         Pixel Perfect
       </h1>
@@ -22,7 +23,7 @@ const Header = ({ siteTitle }) => (
           Buy Now · $10
         </a>
       </div>
-      <div className={`mt-20`}>
+      <div className={`mt-12 sm:mt-15 md:mt-20`}>
         <h4 className={`text-base font-medium text-gray-700`}>Available for</h4>
         <div className={`flex w-48 m-auto`}>
           <img className={`flex-1`} src={SketchLogo} alt="Sketch" />

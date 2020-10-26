@@ -55,7 +55,7 @@ const Image = () => {
   //   return <div>Picture not found</div>
   // }
 
-  return <Img />
+  return <Img fluid={data.image3.childImageSharp.fluid} />
 }
 
 // export const deviceShowcaseImage = graphql`

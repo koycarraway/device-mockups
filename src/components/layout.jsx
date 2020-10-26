@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
       <div className={`m-auto max-w-md sm:max-w-xl md:max-w-full`} >
         <main>{children}</main>
         <div className={`pt-20 pb-40 mt-6 text-center`}>
-          <p className={`mb-6  text-md md:text-lg text-gray-500 m-auto max-w-lg`}>
+          <p className={`mb-6 text-md md:text-lg text-gray-500 m-auto max-w-lg`}>
           A constantly growing library of pixel-perfect devices for your design mockups and commercial projects.
           </p>
           <div className={`max-w-md mx-auto sm:flex sm:justify-center`}>
