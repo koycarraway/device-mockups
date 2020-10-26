@@ -69,7 +69,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <script src="https://gumroad.com/js/gumroad.js" type="text/javascript" />
+    </Helmet>
   )
 }
 
