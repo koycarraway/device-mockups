@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
           A constantly growing library of pixel-perfect devices for your design mockups and commercial projects.
           </p>
           <div className={`max-w-md mx-auto flex justify-center`}>
-            <a href="https://gum.co/device-mockups" class="flex items-center justify-center px-8 py-3 border border-transparent text-base sm:text-md leading-6 font-semibold rounded-full text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out">
+            <a href="https://gum.co/device-mockups?wanted=true" class="flex items-center justify-center px-8 py-3 border border-transparent text-base sm:text-md leading-6 font-semibold rounded-full text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out">
               Buy Now · $10
             </a>
           </div>
