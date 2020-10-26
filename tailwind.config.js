@@ -16,7 +16,7 @@ module.exports = {
       md: ['20px', '28px'],
       lg: ['24px', '32px'],
       xl: ['36px', '42px'],
-      xxl: ['56px', '67px'],
+      xxl: ['56px', '64px'],
       xxxl: ['80px', '86px'],
     },
     backgroundImage: {
