@@ -40,8 +40,10 @@ const Layout = ({ children }) => {
           </div>
         </div>
         <footer className={`m-auto text-center pb-10`} >
-          <img src={Koymoji} alt="Koy Carraway" className={`rounded-full m-auto mb-4`} width="48" height="48" />
-          <p className={`m-0 text-sm font-medium text-gray-400`} >Designed and built by Koy Carraway</p>
+          <a href="https://twitter.com/koycarraway" target="_blank">
+            <img src={Koymoji} alt="Koy Carraway" className={`rounded-full m-auto mb-4`} width="48" height="48" />
+          </a>
+          <p className={`m-0 text-sm font-medium text-gray-500`} >Designed and built by <a href="https://twitter.com/koycarraway" target="_blank" className="text-gray-100 hover:text-indigo-400 transition duration-150 ease-in-out">Koy Carraway</a></p>
           <small className={`m-0 text-xs text-gray-700`}>Copyright © {new Date().getFullYear()} Koy Carraway. All rights reserved.</small>
         </footer>
       </div>

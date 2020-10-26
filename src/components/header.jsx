@@ -9,7 +9,7 @@ import HeroBG from "../images/hero-bg@2x.png"
 const Header = ({ siteTitle }) => (
   <header className={`bg-cover bg-bottom bg-no-repeat`} style={{backgroundImage: `url(${HeroBG})`}} >
     <div className={`m-auto text-center max-w-xl pt-20 pb-4 md:pb-7 px-4`} >
-      <h1 className={`mb-0 font-semibold text-xxl md:text-xxxl text-white text-opacity-25`} >
+      <h1 className={`mb-0 font-semibold text-xxl md:text-xxxl text-white text-opacity-75`} >
         Pixel Perfect
       </h1>
       <h1 className={`mb-6 font-semibold text-xxl md:text-xxxl`} >
