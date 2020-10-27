@@ -3,6 +3,7 @@ module.exports = {
     title: `Device Mockups`,
     description: `A constantly growing library of pixel-perfect devices for your design mockups and commercial projects.`,
     author: `@koycarraway`,
+    webite: `https://devicemockups.design`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
