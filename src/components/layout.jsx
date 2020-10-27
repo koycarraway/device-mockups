@@ -7,15 +7,26 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
 import Koymoji from "../images/koymoji@2x.png"
 
 import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
   return (
     <>
-      <Header />
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div className={`m-auto max-w-md sm:max-w-xl md:max-w-full`} >
         <main>{children}</main>
         <div className={`pt-20 pb-40 mt-6 text-center`}>

@@ -1,28 +1,9 @@
-const website = require('./config/website')
-const pathPrefix = website.pathPrefix === '/' ? '' : website.pathPrefix
-
 module.exports = {
-  /* General Information */
-  pathPrefix: website.pathPrefix,
   siteMetadata: {
-    siteUrl: website.url + pathPrefix, // For gatsby-plugin-sitemap
-    pathPrefix,
-    title: website.title,
-    titleAlt: website.titleAlt,
-    description: website.description,
-    banner: website.logo,
-    headline: website.headline,
-    siteLanguage: website.siteLanguage,
-    ogLanguage: website.ogLanguage,
-    author: website.author,
-    twitter: website.twitter,
-    facebook: website.facebook,
+    title: `Device Mockups`,
+    description: `A constantly growing library of pixel-perfect devices for your design mockups and commercial projects.`,
+    author: `@koycarraway`
   },
-  // siteMetadata: {
-  //   title: `Device Mockups`,
-  //   description: `A constantly growing library of pixel-perfect devices for your design mockups and commercial projects.`,
-  //   author: `@koycarraway`
-  // },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
