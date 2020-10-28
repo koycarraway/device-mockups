@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React from "react"
 
 import SketchLogo from "../images/sketch.svg"
@@ -6,7 +5,7 @@ import FigmaLogo from "../images/figma.svg"
 import XDLogo from "../images/adobe-xd.svg"
 import HeroBG from "../images/hero-bg@2x.png"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header className={`bg-cover bg-bottom bg-no-repeat`} style={{backgroundImage: `url(${HeroBG})`}} >
     <div className={`m-auto text-center max-w-xl pt-12 sm:pt-24 md:pt-32 pb-4 md:pb-7 px-4`} >
       <h1 className={`mb-0 font-semibold text-xl sm:text-xxl md:text-xxxl text-white text-opacity-75`} >
@@ -34,13 +33,5 @@ const Header = ({ siteTitle }) => (
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

@@ -2,7 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Device Mockups`,
     description: `A constantly growing library of pixel-perfect devices for your design mockups and commercial projects.`,
-    author: `@koycarraway`
+    author: `@koycarraway`,
+    keywords: `device, mockups, iphone, apple, google, pixel, samsung, oneplus, sony`,
+    siteUrl: `https://devicemockups.design`,
+    image: `src/images/cover-image.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
