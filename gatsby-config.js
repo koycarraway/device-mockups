@@ -31,7 +31,7 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-postcss',
+      resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
       },
@@ -39,7 +39,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: { tailwind: true }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        // your google analytics tracking id
+        trackingId: `G-RVEHB28TQP`,
+        // Puts tracking script in the head instead of the body
+        head: true,
+        // enable ip anonymization
+        anonymize: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
