@@ -1,9 +1,47 @@
 import React from "react"
+// import {PageView, initGA, Event} from './tracking';
 
 import SketchLogo from "../images/sketch.svg"
 import FigmaLogo from "../images/figma.svg"
 import XDLogo from "../images/adobe-xd.svg"
 import HeroBG from "../images/hero-bg@2x.png"
+
+import ReactGA from "react-ga";
+
+export const PageView = () => {  
+  ReactGA.pageview(window.location.pathname +  
+                   window.location.search); 
+}
+
+export const initGA = () => {  
+  ReactGA.initialize(
+    [
+      {
+        trackingId: 'G-RVEHB28TQP',
+        gaOptions: { name: 'tracker1' }
+      },
+      {
+        trackingId: 'UA-181585210-1',
+        gaOptions: { name: 'tracker2' }
+      }
+    ],
+    { debug: true, alwaysSendToDefaultTracker: false }
+  );
+}
+
+/**
+ * Event - Add custom tracking event.
+ * @param {string} category 
+ * @param {string} action 
+ * @param {string} label 
+ */
+export const Event = (category, action, label) => {
+  ReactGA.event({
+    category: category,
+    action: action,
+    label: label
+  });
+};
 
 const Header = () => (
   <header className={`bg-cover bg-bottom bg-no-repeat`} style={{backgroundImage: `url(${HeroBG})`}} >
@@ -18,7 +56,7 @@ const Header = () => (
       A constantly growing library of pixel-perfect devices for your design mockups and commercial projects.
       </p>
       <div className={`max-w-md mx-auto flex justify-center`}>
-        <a href="https://gum.co/device-mockups?wanted=true" class="flex items-center justify-center px-8 py-3 border border-transparent text-base sm:text-md leading-6 font-semibold rounded-full text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out">
+        <a href="https://gum.co/device-mockups?wanted=true" onClick={()=> Event("PRODUCT", "Product added to cart", "PRODUCT_PAGE")} class="flex items-center justify-center px-8 py-3 border border-transparent text-base sm:text-md leading-6 font-semibold rounded-full text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out">
           Buy Now · $10
         </a>
       </div>
