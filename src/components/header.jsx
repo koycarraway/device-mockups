@@ -1,48 +1,10 @@
 import React from "react"
-// import {PageView, initGA, Event} from './tracking';
+import Checkout from "./checkout"
 
 import SketchLogo from "../images/sketch.svg"
 import FigmaLogo from "../images/figma.svg"
 import XDLogo from "../images/adobe-xd.svg"
 import HeroBG from "../images/hero-bg@2x.png"
-
-import ReactGA from "react-ga";
-import Checkout from "./checkout"
-
-export const PageView = () => {  
-  ReactGA.pageview(window.location.pathname +  
-                   window.location.search); 
-}
-
-export const initGA = () => {  
-  ReactGA.initialize(
-    [
-      {
-        trackingId: 'G-RVEHB28TQP',
-        gaOptions: { name: 'tracker1' }
-      },
-      {
-        trackingId: 'UA-181585210-1',
-        gaOptions: { name: 'tracker2' }
-      }
-    ],
-    { debug: true, alwaysSendToDefaultTracker: false }
-  );
-}
-
-/**
- * Event - Add custom tracking event.
- * @param {string} category 
- * @param {string} action 
- * @param {string} label 
- */
-export const Event = (category, action, label) => {
-  ReactGA.event({
-    category: category,
-    action: action,
-    label: label
-  });
-};
 
 const Header = () => (
   <header className={`bg-cover bg-bottom bg-no-repeat`} style={{backgroundImage: `url(${HeroBG})`}} >

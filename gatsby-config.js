@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-csp`,
       options: {
-        disableOnDev: false,
+        disableOnDev: true,
         mergeScriptHashes: false,
         mergeStyleHashes: false,
         directives: {
@@ -56,6 +56,35 @@ module.exports = {
           "frame-src": "'self' https://gumroad.com",
           "connect-src": "'self' https://www.google-analytics.com https://stats.g.doubleclick.net s3.amazonaws.com/gumroad www.google.com www.gstatic.com *.facebook.com *.facebook.net files.gumroad.com/ *.braintreegateway.com www.paypalobjects.com *.paypal.com *.braintree-api.com gumroad.com"
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-181585210-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Setting this parameter is optional
+        anonymize: false,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Enables Google Optimize using your container Id
+        // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        // Enables Google Optimize Experiment ID
+        // experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+        // Set Variation ID. 0 for original 1,2,3....
+        // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+        // Defers execution of google analytics script after page load
+        // defer: false,
+        // Any additional optional fields
+        sampleRate: 100,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "devicemockups.design",
       },
     },
     // {
