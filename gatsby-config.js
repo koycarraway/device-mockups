@@ -43,14 +43,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-csp`,
       options: {
+        disableOnDev: false,
         mergeScriptHashes: false,
         mergeStyleHashes: false,
         directives: {
-          'script-src': `'self' 'unsafe-inline' data: www.google-analytics.com https://gumroad.com/js/gumroad.js`,
-          'img-src': `'self' data: www.google-analytics.com https://gumroad.com`,
-          'font-src': `'self' data: fonts.gstatic.com`,
-          'frame-src': `'self' https://gumroad.com`,
-          'connect-src': `bam.nr-data.net www.dropbox.com s3.amazonaws.com/gumroad s3.amazonaws.com/gumroad/ www.google.com www.gstatic.com *.facebook.com *.facebook.net files.gumroad.com/ d1bdh6c3ceakz5.cloudfront.net/ *.braintreegateway.com www.paypalobjects.com *.paypal.com *.braintree-api.com iframe.ly gumroad.com`
+          "script-src": "'self' www.google-analytics.com https://gumroad.com/js/gumroad.js",
+          "style-src": "'self' 'unsafe-inline'",
+          "img-src": "'self' data: www.google-analytics.com https://gumroad.com",
+          // 'script-src': `'self' 'unsafe-inline' data: www.google-analytics.com https://gumroad.com/js/gumroad.js`,
+          // 'style-src': `'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com https://gumroad.com/js/gumroad.js`,
+          // 'img-src': `'self' data: www.google-analytics.com https://gumroad.com`,
+          // 'frame-src': `'self' https://gumroad.com`,
+          // 'connect-src': `bam.nr-data.net www.dropbox.com s3.amazonaws.com/gumroad s3.amazonaws.com/gumroad/ www.google.com www.gstatic.com *.facebook.com *.facebook.net files.gumroad.com/ d1bdh6c3ceakz5.cloudfront.net/ *.braintreegateway.com www.paypalobjects.com *.paypal.com *.braintree-api.com iframe.ly gumroad.com`
         },
       },
     },
