@@ -49,7 +49,7 @@ module.exports = {
         directives: {
           "script-src": "'self' 'unsafe-inline' www.google-analytics.com https://www.googletagmanager.com/ https://gumroad.com/js/gumroad.js https://assets.gumroad.com",
           "style-src": "'self' 'unsafe-inline'",
-          "img-src": "'self' data: https://google.com/ads https://www.google.com/ads https://analytics.google.com www.google-analytics.com https://gumroad.com",
+          "img-src": "'self' data: https://google.com/ads https://www.google.com/ads/ga-audiences https://analytics.google.com www.google-analytics.com https://gumroad.com",
           "frame-src": "'self' https://gumroad.com",
           "connect-src": "'self' https://analytics.google.com https://www.google-analytics.com https://stats.g.doubleclick.net https://stats.g.doubleclick.net/j s3.amazonaws.com/gumroad www.google.com www.gstatic.com *.facebook.com *.facebook.net files.gumroad.com/ *.braintreegateway.com www.paypalobjects.com *.paypal.com *.braintree-api.com gumroad.com"
         },
