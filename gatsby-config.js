@@ -40,6 +40,20 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: { tailwind: true }
     },
+    {
+      resolve: `gatsby-plugin-csp`,
+      options: {
+        mergeScriptHashes: false,
+        mergeStyleHashes: false,
+        directives: {
+          'script-src': `'self' 'unsafe-inline' data: www.google-analytics.com`,
+          'style-src': `'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com`,
+          'img-src': `'self' data: www.google-analytics.com`,
+          'font-src': `'self' data: fonts.gstatic.com`,
+          'connect-src': `bam.nr-data.net www.dropbox.com s3.amazonaws.com/gumroad s3.amazonaws.com/gumroad/ www.google.com www.gstatic.com *.facebook.com *.facebook.net files.gumroad.com/ d1bdh6c3ceakz5.cloudfront.net/ *.braintreegateway.com www.paypalobjects.com *.paypal.com *.braintree-api.com iframe.ly gumroad.com`
+        },
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-google-gtag`,
     //   options: {
