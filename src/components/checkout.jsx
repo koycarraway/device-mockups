@@ -25,7 +25,8 @@ class Checkout extends React.Component {
       <a 
         href="https://gum.co/device-mockups?wanted=true" 
         rel="noreferrer" 
-        className={`${baseStyles}`}
+        target="_blank" 
+        className={`gumroad-button ${baseStyles}`}
         onClick={this.handleClick}
       >
         Buy Now · $10
