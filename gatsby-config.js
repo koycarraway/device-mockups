@@ -47,7 +47,7 @@ module.exports = {
         mergeScriptHashes: false,
         mergeStyleHashes: false,
         directives: {
-          "script-src": "'self' 'unsafe-inline' www.google-analytics.com https://gumroad.com/js/gumroad.js https://assets.gumroad.com",
+          "script-src": "'self' 'unsafe-inline' www.google-analytics.com https://www.googletagmanager.com/ https://gumroad.com/js/gumroad.js https://assets.gumroad.com",
           "style-src": "'self' 'unsafe-inline'",
           "img-src": "'self' data: www.google-analytics.com https://gumroad.com",
           // 'script-src': `'self' 'unsafe-inline' data: www.google-analytics.com https://gumroad.com/js/gumroad.js`,
