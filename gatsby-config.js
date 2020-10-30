@@ -54,7 +54,7 @@ module.exports = {
           // 'style-src': `'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com https://gumroad.com/js/gumroad.js`,
           // 'img-src': `'self' data: www.google-analytics.com https://gumroad.com`,
           // 'frame-src': `'self' https://gumroad.com`,
-          // 'connect-src': `bam.nr-data.net www.dropbox.com s3.amazonaws.com/gumroad s3.amazonaws.com/gumroad/ www.google.com www.gstatic.com *.facebook.com *.facebook.net files.gumroad.com/ d1bdh6c3ceakz5.cloudfront.net/ *.braintreegateway.com www.paypalobjects.com *.paypal.com *.braintree-api.com iframe.ly gumroad.com`
+          "connect-src": "'self' https://www.google-analytics.com  https://stats.g.doubleclick.net s3.amazonaws.com/gumroad www.google.com www.gstatic.com *.facebook.com *.facebook.net files.gumroad.com/ *.braintreegateway.com www.paypalobjects.com *.paypal.com *.braintree-api.com gumroad.com"
         },
       },
     },
