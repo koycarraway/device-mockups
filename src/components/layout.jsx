@@ -13,6 +13,7 @@ import Koymoji from "../images/koymoji@2x.png"
 
 import Header from "./header"
 import "./layout.css"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -39,11 +40,11 @@ const Layout = ({ children }) => {
           </div>
         </div>
         <footer className={`m-auto text-center pb-10`} >
-          <a href="https://twitter.com/koycarraway" target="_blank" rel="noreferrer">
+          <OutboundLink href="https://twitter.com/koycarraway" target="_blank" rel="noreferrer">
             <img src={Koymoji} alt="Koy Carraway" className={`rounded-full m-auto mb-4`} width="48" height="48" />
-          </a>
+          </OutboundLink>
           <p className={`m-0 text-sm font-medium text-gray-500`} >
-            Designed and built by <a href="https://twitter.com/koycarraway" target="_blank" rel="noreferrer" className="text-gray-100 transition duration-150 ease-in-out hover:text-indigo-400">Koy Carraway</a>
+            Designed and built by <OutboundLink href="https://twitter.com/koycarraway" target="_blank" rel="noreferrer" className="text-gray-100 transition duration-150 ease-in-out hover:text-indigo-400">Koy Carraway</OutboundLink>
           </p>
           <small className={`m-0 text-xs text-gray-600`}>Copyright © {new Date().getFullYear()} Koy Carraway. All rights reserved.</small>
         </footer>
