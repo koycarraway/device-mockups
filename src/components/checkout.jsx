@@ -23,7 +23,7 @@ class Checkout extends React.Component {
   render() {
     return (
       <a 
-        href="https://gum.co/gWKrQ?wanted=true" 
+        href="https://gumroad.com/l/gWKrQ?wanted=true" 
         rel="noreferrer" 
         target="_blank" 
         className={`${baseStyles}`}
