@@ -23,10 +23,10 @@ class Checkout extends React.Component {
   render() {
     return (
       <a 
-        href="https://gum.co/device-mockups?wanted=true" 
+        href="https://gum.co/gWKrQ?wanted=true" 
         rel="noreferrer" 
         target="_blank" 
-        className={`gumroad-button ${baseStyles}`}
+        className={`${baseStyles}`}
         onClick={this.handleClick}
       >
         Buy Now · $10
