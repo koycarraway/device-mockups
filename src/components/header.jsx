@@ -1,5 +1,6 @@
 import React from "react"
 import Checkout from "./checkout"
+import Carousel from "../components/carousel"
 
 import HeroBG from "../images/hero-bg@2x.png"
 
@@ -12,9 +13,13 @@ import SonyLogo from "../images/logos/logo-sony.svg"
 import SamsungLogo from "../images/logos/logo-samsung.svg"
 import OnePlusLogo from "../images/logos/logo-oneplus.svg"
 
+const SLIDE_COUNT = 3;
+const slides = Array.from(Array(SLIDE_COUNT).keys());
+
 const Header = () => (
   <header className={`bg-cover bg-bottom bg-no-repeat`} style={{backgroundImage: `url(${HeroBG})`}} >
     <div className={`m-auto text-center max-w-full pt-12 sm:pt-24 md:pt-32 pb-4 md:pb-7 px-4`} >
+      <Carousel slides={slides} />
       <h1 className={`mb-0 font-semibold text-xl sm:text-xxl md:text-xxxl text-white text-opacity-75`} >
         Pixel Perfect
       </h1>
