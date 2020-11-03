@@ -14,6 +14,7 @@ import Koymoji from "../images/koymoji@2x.png"
 import Header from "./header"
 import "./layout.css"
 import { OutboundLink } from "gatsby-plugin-google-gtag"
+import Features from "./features"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -39,6 +40,7 @@ const Layout = ({ children }) => {
             <Checkout />
           </div>
         </div>
+        <Features />
         <footer className={`m-auto text-center pb-10`} >
           <OutboundLink href="https://twitter.com/koycarraway" target="_blank" rel="noreferrer">
             <img src={Koymoji} alt="Koy Carraway" className={`rounded-full m-auto mb-4`} width="48" height="48" />
