@@ -21,7 +21,7 @@ const Header = () => (
       <h1 className={`font-semibold text-xl sm:text-xxl md:text-xxxl`} >
         <span className={`antialiased bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-indigo-500`}>Device Mockups</span>
       </h1>
-      <div className={`my-4 sm:my-6 md:my-8 lg:my-12 opacity-75`}>
+      <div className={`hidden sm:block sm:my-6 md:my-8 lg:my-12 opacity-75`}>
         <img className={`inline-block mx-3 sm:mx-5 md:mx-7 mb-0 h-5 sm:h-6 md:h-8 lg:h-full`} src={GoogleLogo} alt="Google" height="40" />
         <img className={`inline-block mx-3 sm:mx-5 md:mx-7 mb-0 h-5 sm:h-6 md:h-8 lg:h-full`} src={SamsungLogo} alt="Samsung" height="40" />
         <img className={`inline-block mx-3 sm:mx-5 md:mx-7 mb-0 h-5 sm:h-6 md:h-8 lg:h-full`} src={AppleLogo} alt="Apple" height="40"/>
