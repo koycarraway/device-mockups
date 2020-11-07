@@ -29,7 +29,7 @@ class Checkout extends React.Component {
         className={`${baseStyles}`}
         onClick={this.handleClick}
       >
-        Buy Now · $10
+        Buy now · $10
       </a>
     )
   }

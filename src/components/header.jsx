@@ -1,25 +1,16 @@
 import React from "react"
 import Checkout from "./checkout"
-import Carousel from "../components/carousel"
 
 import HeroBG from "../images/hero-bg@2x.png"
-
-import SketchLogo from "../images/logos/logo-sketch.svg"
-import FigmaLogo from "../images/logos/logo-figma.svg"
-import XDLogo from "../images/logos/logo-adobe-xd.svg"
 import AppleLogo from "../images/logos/logo-apple.svg"
 import GoogleLogo from "../images/logos/logo-google.svg"
 import SonyLogo from "../images/logos/logo-sony.svg"
 import SamsungLogo from "../images/logos/logo-samsung.svg"
 import OnePlusLogo from "../images/logos/logo-oneplus.svg"
 
-const SLIDE_COUNT = 3;
-const slides = Array.from(Array(SLIDE_COUNT).keys());
-
 const Header = () => (
   <header className={`bg-cover bg-bottom bg-no-repeat`} style={{backgroundImage: `url(${HeroBG})`}} >
-    <div className={`m-auto text-center max-w-full pt-12 sm:pt-24 md:pt-32 pb-4 md:pb-7 px-4`} >
-      <Carousel slides={slides} />
+    <div className={`m-auto text-center max-w-full pt-12 sm:pt-24 pb-4 md:pb-7 px-4`} >
       <h1 className={`mb-0 font-semibold text-xl sm:text-xxl md:text-xxxl text-white text-opacity-75`} >
         Pixel Perfect
       </h1>
@@ -38,14 +29,6 @@ const Header = () => (
       </p>
       <div className={`max-w-md mx-auto flex justify-center`}>
         <Checkout />
-      </div>
-      <div className={`mt-12 sm:mt-15 md:mt-20`}>
-        <h2 className={`text-base font-medium text-gray-700`}>Available for</h2>
-        <div>
-          <img className={`inline-block mx-4`} src={SketchLogo} alt="Sketch" height="36" />
-          <img className={`inline-block mx-4`} src={FigmaLogo} alt="Figma" height="36"/>
-          <img className={`inline-block mx-4`} src={XDLogo} alt="Adobe XD" height="36"/>
-        </div>
       </div>
     </div>
   </header>

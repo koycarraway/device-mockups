@@ -8,11 +8,11 @@ import IconExport from "../images/icons/icon-export.svg"
 import IconGlobe from "../images/icons/icon-globe.svg"
 
 const Feature = (props) => (
-  <div class="">
-    <div class="flex items-center justify-center text-white sm:mx-auto">
+  <div>
+    <div class="flex sm:items-center sm:justify-center text-white sm:mx-auto">
       <img className={`inline-block mb-0`} src={`${props.icon}`} alt="Icon" height="32" width="32" />
     </div>
-    <div class="mt-4 text-center">
+    <div class="mt-4 sm:text-center">
       <h5 class="text-base md:text-md font-semibold mb-0">{props.title}</h5>
       <p class="mt-1 mb-0 text-sm md:text-base text-gray-600">{props.subtitle}</p>
     </div>
@@ -20,9 +20,8 @@ const Feature = (props) => (
 )
 
 const Features = () => (
-  <div class="max-w-xl mx-auto py-12 px-4 sm:px-6 lg:max-w-screen-lg lg:px-8">
-    <h2 class="text-xl md:text-xxl font-semibold mb-0 text-center pb-12">Features</h2>
-    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-8 md:grid-cols-3 md:gap-8">
+  <div class="mx-auto py-3 sm:py-5 px-6 sm:px-4 md:px-6 lg:px-8 max-w-xl md:max-w-3xl lg:max-w-4xl">
+    <div class="grid grid-cols-2 gap-4 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-8">
       <Feature
         icon={IconCollection}
         title="Growing library"

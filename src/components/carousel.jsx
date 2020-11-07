@@ -1,68 +1,42 @@
-import React, { useState, useEffect, useCallback } from "react";
-import { DotButton, PrevButton, NextButton } from "./carousel-buttons";
-import { useEmblaCarousel } from "embla-carousel/react";
-import { mediaByIndex } from "../images/media";
-import "./carousel.css";
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "./carousel.css" 
 
-const Carousel = ({ slides }) => {
-  const [viewportRef, embla] = useEmblaCarousel();
-  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
-  const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const [scrollSnaps, setScrollSnaps] = useState([]);
+import DesignToolFigma from "../images/media/design-tool-showcase-figma@2x.png"
+import DesignToolSketch from "../images/media/design-tool-showcase-sketch@2x.png"
+import DesignToolXD from "../images/media/design-tool-showcase-xd@2x.png"
 
-  const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
-  const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
-  const scrollTo = useCallback((index) => embla && embla.scrollTo(index), [
-    embla
-  ]);
-
-  const onSelect = useCallback(() => {
-    if (!embla) return;
-    setSelectedIndex(embla.selectedScrollSnap());
-    setPrevBtnEnabled(embla.canScrollPrev());
-    setNextBtnEnabled(embla.canScrollNext());
-  }, [embla, setSelectedIndex]);
-
-  useEffect(() => {
-    if (!embla) return;
-    onSelect();
-    setScrollSnaps(embla.scrollSnapList());
-    embla.on("select", onSelect);
-  }, [embla, setScrollSnaps, onSelect]);
-
-  return (
-    <>
-      <div className="embla">
-        <div className="embla__viewport" ref={viewportRef}>
-          <div className="embla__container">
-            {slides.map((index) => (
-              <div className="embla__slide" key={index}>
-                <div className="embla__slide__inner">
-                  <img
-                    className="embla__slide__img"
-                    src={mediaByIndex(index)}
-                    alt="A cool cat."
-                  />
-                </div>
-              </div>
-            ))}
+export default class SimpleSlider extends Component {
+  render() {
+    const settings = {
+      className: "center",
+      centerMode: true,
+      centerPadding: "19px",
+      infinite: true,
+      slidesToShow: 1,
+      speed: 1000,
+      dots: false,
+      arrows: false,
+      fade: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      pauseOnHover: false,
+      lazyLoad: true
+    };
+    return (
+      <>
+        <Slider ref={slider => (this.slider = slider)} {...settings}>
+          <div>
+            <img className={`rounded-md md:rounded-lg`} src={DesignToolFigma} height="620" />
           </div>
-        </div>
-        <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-        <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
-      </div>
-      <div className="embla__dots">
-        {scrollSnaps.map((_, index) => (
-          <DotButton
-            key={index}
-            selected={index === selectedIndex}
-            onClick={() => scrollTo(index)}
-          />
-        ))}
-      </div>
-    </>
-  );
-};
-
-export default Carousel;
+          <div>
+            <img className={`rounded-md md:rounded-lg`} src={DesignToolSketch}  height="620" />
+          </div>
+          <div>
+            <img className={`rounded-md md:rounded-lg`} src={DesignToolXD} height="620" />
+          </div>
+        </Slider>
+      </>
+    );
+  }
+}

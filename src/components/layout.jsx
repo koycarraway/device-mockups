@@ -8,13 +8,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Checkout from "./checkout"
 import Koymoji from "../images/koymoji@2x.png"
 
 import Header from "./header"
 import "./layout.css"
 import { OutboundLink } from "gatsby-plugin-google-gtag"
-import Features from "./features"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,17 +28,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div className={`m-auto max-w-md sm:max-w-xl md:max-w-full`} >
+      <div className={`m-auto max-w-lg sm:max-w-xl md:max-w-3xl lg:max-w-full`} >
         <main>{children}</main>
-        <div className={`pt-20 pb-40 mt-6 text-center`}>
-          <p className={`mb-6 text-base sm:text-md md:text-lg text-gray-500 m-auto max-w-lg`}>
-          A constantly growing library of pixel-perfect devices for your design mockups and commercial projects.
-          </p>
-          <div className={`max-w-md mx-auto flex justify-center`}>
-            <Checkout />
-          </div>
-        </div>
-        <Features />
         <footer className={`m-auto text-center pb-10`} >
           <OutboundLink href="https://twitter.com/koycarraway" target="_blank" rel="noreferrer">
             <img src={Koymoji} alt="Koy Carraway" className={`rounded-full m-auto mb-4`} width="48" height="48" />
