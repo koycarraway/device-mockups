@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import "./carousel.css" 
 
 import DesignToolFigma from "../images/media/design-tool-showcase-figma@2x.png"
 import DesignToolSketch from "../images/media/design-tool-showcase-sketch@2x.png"

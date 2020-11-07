@@ -12,6 +12,7 @@ import Koymoji from "../images/koymoji@2x.png"
 
 import Header from "./header"
 import "./layout.css"
+import "./carousel.css"
 import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 const Layout = ({ children }) => {
