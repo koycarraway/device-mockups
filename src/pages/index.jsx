@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import DeviceShowcase from "../components/device-showcase"
+// import DeviceShowcase from "../components/device-showcase"
 import SEO from "../components/seo"
 import Carousel from "../components/carousel"
 import AppleCarousel from "../components/apple-carousel"
