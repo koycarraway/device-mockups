@@ -38,7 +38,11 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-purgecss`,
-      options: { tailwind: true }
+      options: {
+        develop: false,
+        tailwind: true,
+        ignore: ['components/']
+      }
     },
     {
       resolve: `gatsby-plugin-hotjar`,

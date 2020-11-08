@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import "./carousel.css" 
 
 import Slide1 from "../images/media/slide-iphones@2x.png"
 import Slide2 from "../images/media/slide-iphone-closeup@2x.png"
@@ -30,12 +29,12 @@ export default class SimpleSlider extends Component {
     return (
       <>
         <Slider ref={slider => (this.slider = slider)} {...settings}>
-          <img src={Slide1} height="620" />
-          <img src={Slide2} height="620" />
-          <img src={Slide3} height="620" />
-          <img src={Slide4} height="620" />
-          <img src={Slide5}  height="620" />
-          <img src={Slide6} height="620" />
+          <img src={Slide1} alt="Apple Device Mockup" height="620" />
+          <img src={Slide2} alt="Apple Device Mockup" height="620" />
+          <img src={Slide3} alt="Apple Device Mockup" height="620" />
+          <img src={Slide4} alt="Apple Device Mockup" height="620" />
+          <img src={Slide5} alt="Apple Device Mockup" height="620" />
+          <img src={Slide6} alt="Apple Device Mockup" height="620" />
         </Slider>
       </>
     );

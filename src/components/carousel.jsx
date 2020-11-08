@@ -26,13 +26,13 @@ export default class SimpleSlider extends Component {
       <>
         <Slider ref={slider => (this.slider = slider)} {...settings}>
           <div>
-            <img className={`rounded-md md:rounded-lg`} src={DesignToolFigma} height="620" />
+            <img className={`rounded-md md:rounded-lg`} src={DesignToolFigma} alt=" Figma Design Tool" height="620" />
           </div>
           <div>
-            <img className={`rounded-md md:rounded-lg`} src={DesignToolSketch}  height="620" />
+            <img className={`rounded-md md:rounded-lg`} src={DesignToolSketch} alt=" Sketch Design Tool" height="620" />
           </div>
           <div>
-            <img className={`rounded-md md:rounded-lg`} src={DesignToolXD} height="620" />
+            <img className={`rounded-md md:rounded-lg`} src={DesignToolXD} alt=" Adobe XD Design Tool" height="620" />
           </div>
         </Slider>
       </>
