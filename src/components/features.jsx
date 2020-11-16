@@ -25,7 +25,7 @@ const Features = () => (
       <Feature
         icon={IconCollection}
         title="Growing library"
-        subtitle="Includes more than 20 devices and a constantly growing library."
+        subtitle="Includes more than 25 devices and a constantly growing library."
       />
       <Feature
         icon={IconTwinkle}
