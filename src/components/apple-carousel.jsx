@@ -16,12 +16,11 @@ export default class SimpleSlider extends Component {
       centerPadding: "0",
       infinite: true,
       slidesToShow: 1,
-      speed: 800,
+      speed: 600,
       dots: true,
       arrows: true,
       fade: false,
       autoplay: false,
-      autoplaySpeed: 4000,
       pauseOnHover: false,
       useTransform: true,
       lazyLoad: false
@@ -36,6 +35,22 @@ export default class SimpleSlider extends Component {
           <img src={Slide5} alt="Apple Device Mockup" height="620" />
           <img src={Slide6} alt="Apple Device Mockup" height="620" />
         </Slider>
+        <div className={`mx-auto text-center mt-5`} >
+          <h1 className={`mb-2 text-lg font-semibold`} >
+            Apple Devices
+          </h1>
+          <ul className={`device-list mx-auto text-xs sm:text-sm font-normal text-gray-500`} >
+            <li>iPhone SE</li>
+            <li>iPhone 11 Pro</li>
+            <li>iPhone 12 Mini</li>
+            <li>iPhone 12 | 12 Pro</li>
+            <li>iPhone 12 Pro Max</li>
+            <li>iPad</li>
+            <li>iPad Air 4</li>
+            <li>iPad Pro</li>
+            <li>Macbook Pro</li>
+          </ul>
+        </div>
       </>
     );
   }
