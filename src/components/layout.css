@@ -604,3 +604,153 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
+.device-list li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.device-list li:after {
+  content: "·";
+  display: inline-block;
+  margin: 0 8px;
+  opacity: 75%;
+}
+
+.device-list li:last-of-type:after {
+  display: none;
+}
+
+.device-thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+
+.device-thumbnail:before {
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .5);
+  backdrop-filter: blur(6px);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDEySDZNMTIgNlYxMlY2Wk0xMiAxMlYxOFYxMlpNMTIgMTJIMThIMTJaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all .25s ease-in-out;
+  z-index: 10;
+  transform: scale(0.5);
+  pointer-events: none;
+}
+
+.device-thumbnail:hover:before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.device-thumbnail:hover {
+  cursor: pointer;
+}
+
+.device-thumbnail img {
+  margin: 0;
+  transition: all .25s ease-in-out;
+}
+
+.device-thumbnail:hover img {
+  margin: 0;
+  transform: scale(.95);
+}
+
+.device-text {
+  display: block;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  padding: 64px 4px 16px;
+  margin: 0;
+  width: 100%;
+  z-index: 10;
+  transition: all .25s ease-in-out;
+  background: linear-gradient(to top, #000 40%, transparent);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  transform: scale(.95);
+  pointer-events: none;
+}
+
+.device-thumbnail:hover .device-text {
+  opacity: 1;
+  bottom: 0;
+  transform: scale(1);
+}
+
+[data-rmiz-wrap="visible"],
+[data-rmiz-wrap="hidden"] {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+  opacity: 1;
+}
+[data-rmiz-wrap="hidden"] {
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+[data-rmiz-overlay] {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(0);
+  transition: all .2s ease-in-out;
+}
+[data-rmiz-overlay="true"] {
+  /* background-color: rgba(0, 0, 0, .5) !important; */
+  backdrop-filter: blur(8px);
+}
+[data-rmiz-wrap] button:focus {
+  outline: none;
+}
+[data-rmiz-btn-open],
+[data-rmiz-btn-close] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* reset styles */
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  color: inherit;
+  background: none;
+  appearance: none;
+}
+/* [data-rmiz-btn-open] {
+  cursor: zoom-in;
+} */
+[data-rmiz-btn-close] {
+  cursor: zoom-out;
+}
+[data-rmiz-modal-content] {
+  position: absolute;
+  transition-property: transform;
+  transform-origin: center center;
+}
