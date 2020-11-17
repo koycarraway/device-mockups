@@ -3,9 +3,8 @@ import Layout from "../components/layout"
 // import DeviceShowcase from "../components/device-showcase"
 import SEO from "../components/seo"
 import Carousel from "../components/carousel"
-import AppleCarousel from "../components/apple-carousel"
+// import AppleCarousel from "../components/apple-carousel"
 import Features from "../components/features"
-import Zoom from 'react-medium-image-zoom'
 import DeviceThumbnail from "../components/device-thumbnail"
 
 // import AppleImage from "../images/Apple@2x.png"
@@ -13,9 +12,9 @@ import DeviceThumbnail from "../components/device-thumbnail"
 // import SamsungImage from "../images/Samsung@2x.png"
 // import MoreImage from "../images/More@2x.png"
 
-import SketchLogo from "../images/logos/logo-sketch.svg"
-import FigmaLogo from "../images/logos/logo-figma.svg"
-import XDLogo from "../images/logos/logo-adobe-xd.svg"
+// import SketchLogo from "../images/logos/logo-sketch.svg"
+// import FigmaLogo from "../images/logos/logo-figma.svg"
+// import XDLogo from "../images/logos/logo-adobe-xd.svg"
 
 import AppleIPhoneSE from "../images/devices/apple/iphone-se.png"
 import AppleIPhone11Pro from "../images/devices/apple/iphone-11-pro.png"
@@ -48,6 +47,10 @@ import OnePlus7TPro from "../images/devices/oneplus/oneplus-7t-pro.png"
 import OnePlus8Pro from "../images/devices/oneplus/oneplus-8-pro.png"
 import SonyXperia1ii from "../images/devices/sony/sony-xperia-1-ii.png"
 
+import AmazonFireHD10 from "../images/devices/amazon/amazon-fire-hd-10.png"
+
+import MicrosoftSurfaceProX from "../images/devices/microsoft/microsoft-surface-pro-x.png"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Device Mockups"/>
@@ -67,10 +70,10 @@ const IndexPage = () => (
       <h2 className={`text-xxl font-semibold text-center mb-12`}>What's included</h2>
       <AppleCarousel />
     </div> */}
-    <div className={`mx-auto py-3 sm:py-5 px-6 lg:px-8 max-w-xl md:max-w-3xl lg:max-w-4xl`}>
-      <h2 className={`text-lg sm:text-xl md:text-xxl font-semibold text-center mb-6 sm:mb-8 md:mb-12`}>What's included</h2>
-      <h3 className={`text-base font-semibold text-gray-600 text-center mb-4`}>Mobile Devices</h3>
-      <div className={`grid grid-cols-6 gap-2 sm:grid-cols-6 sm:gap-3 lg:grid-cols-7 lg:gap-4 mb-10`}>
+    <div className={`mx-auto py-3 sm:py-5 px-6 lg:px-8 max-w-xl md:max-w-3xl lg:max-w-4xl mt-12`}>
+      <h2 className={`text-lg sm:text-xl md:text-xxl font-semibold text-center mb-6 sm:mb-8 md:mb-16`}>What's included</h2>
+      <h3 className={`text-lg font-semibold text-center mb-8`}>Mobile Devices</h3>
+      <div className={`grid grid-cols-6 gap-2 sm:grid-cols-6 sm:gap-3 lg:grid-cols-7 lg:gap-4 mb-16`}>
         <DeviceThumbnail title="Apple iPhone SE" image={AppleIPhoneSE} />
         <DeviceThumbnail title="Apple iPhone 11 Pro" image={AppleIPhone11Pro} />
         <DeviceThumbnail title="Apple iPhone 12 Mini" image={AppleIPhone12Mini} />
@@ -89,17 +92,19 @@ const IndexPage = () => (
         <DeviceThumbnail title="OnePlus 7T Pro" image={OnePlus7TPro} />
         <DeviceThumbnail title="OnePlus 8 Pro" image={OnePlus8Pro} />
       </div>
-      <h3 className={`text-base font-semibold text-gray-600 text-center mb-4`}>Tablets</h3>
-      <div className={`grid grid-cols-4 gap-2 lg:gap-12 mb-10`}>
+      <h3 className={`text-lg font-semibold text-center mb-8`}>Tablets</h3>
+      <div className={`grid grid-cols-4 gap-2 lg:gap-12 mb-16`}>
         <DeviceThumbnail title="Apple iPad" image={AppleIPad} />
         <DeviceThumbnail title="Apple iPad Pro" image={AppleIPadPro} />
         <DeviceThumbnail title="Apple iPad Air 4" image={AppleIPadAir} />
         <DeviceThumbnail title="Google Pixel Slate" image={GooglePixelSlate} />
         <DeviceThumbnail title="Samsung Galaxy Tab S7" image={SamsungGalaxyTabS7} />
         <DeviceThumbnail title="Samsung Galaxy Tab A 8.0" image={SamsungGalaxyTabA8} />
+        <DeviceThumbnail title="Amazon Fire HD 10" image={AmazonFireHD10} />
+        <DeviceThumbnail title="Microsoft Surface Pro X" image={MicrosoftSurfaceProX} />
       </div>
-      <h3 className={`text-base font-semibold text-gray-600 text-center mb-4`}>Laptops & Monitors</h3>
-      <div className={`grid grid-cols-2 gap-3 lg:gap-12 mb-10`}>
+      <h3 className={`text-lg font-semibold text-center mb-8`}>Laptops & Monitors</h3>
+      <div className={`grid grid-cols-2 gap-3 lg:gap-12 mb-16`}>
         <DeviceThumbnail title="Apple Macbook Pro" image={AppleMacbookPro} />
         <DeviceThumbnail title="Apple Macbook Air" image={AppleMacbookAir} />
         <DeviceThumbnail title="Google Pixelbook Go" image={GooglePixelbookGo} />
