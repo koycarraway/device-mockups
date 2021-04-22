@@ -1,7 +1,7 @@
 import React from "react"
 import Checkout from "./checkout"
 
-import HeroBG from "../images/hero-bg@2x.png"
+// import HeroBG from "../images/hero-bg@2x.png"
 import AppleLogo from "../images/logos/logo-apple.svg"
 import GoogleLogo from "../images/logos/logo-google.svg"
 import SonyLogo from "../images/logos/logo-sony.svg"
