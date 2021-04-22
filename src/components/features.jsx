@@ -1,11 +1,6 @@
 import React from "react"
-
-import IconCollection from "../images/icons/icon-collection.svg"
-import IconTwinkle from "../images/icons/icon-twinkle.svg"
-import IconVector from "../images/icons/icon-vector.svg"
-import IconImage from "../images/icons/icon-image.svg"
-import IconExport from "../images/icons/icon-export.svg"
-import IconGlobe from "../images/icons/icon-globe.svg"
+import Icon from "./icon"
+import {ICONS} from "./constants"
 
 const Feature = (props) => (
   <div>
@@ -23,32 +18,32 @@ const Features = () => (
   <div className={`mx-auto py-3 sm:py-5 px-6 sm:px-4 md:px-6 lg:px-8 max-w-xl md:max-w-3xl lg:max-w-4xl`}>
     <div className={`grid grid-cols-2 gap-6 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-8`}>
       <Feature
-        icon={IconCollection}
+        icon={<Icon icon={ICONS.COLLECTION} />}
         title="Growing library"
         subtitle="Includes a growing library of 30+ mobile devices, tablets and laptops."
       />
       <Feature
-        icon={IconTwinkle}
+        icon={<Icon icon={ICONS.SPARKLES} />}
         title="Lifetime access"
         subtitle="Lifetime access to new devices created in the future."
       />
       <Feature
-        icon={IconVector}
+        icon={<Icon icon={ICONS.VECTOR} />}
         title="Fully editable vectors"
         subtitle="Fully editable and infinitely scalable vectors."
       />
       <Feature
-        icon={IconImage}
+        icon={<Icon icon={ICONS.IMAGE} />}
         title="Smart image fills"
         subtitle="Easily swappable screens with smart image fills."
       />
       <Feature
-        icon={IconExport}
+        icon={<Icon icon={ICONS.EXPORT} />}
         title="Easy exports"
         subtitle="Take a screenshot after a specified delay to capture the perfect moment."
       />
       <Feature
-        icon={IconGlobe}
+        icon={<Icon icon={ICONS.GLOBE} />}
         title="Commercial usage"
         subtitle="Allowed for commercial projects."
       />
