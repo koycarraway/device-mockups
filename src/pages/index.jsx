@@ -27,6 +27,7 @@ import AppleIPadAir from "../images/devices/apple/ipad-air-4.png"
 import AppleMacbookPro from "../images/devices/apple/macbook-pro.png"
 import AppleMacbookAir from "../images/devices/apple/macbook-air.png"
 import AppleProDisplayXDR from "../images/devices/apple/pro-display-xdr.png"
+import AppleIMac24 from "../images/devices/apple/imac-24.png"
 
 import GooglePixel2 from "../images/devices/google/google-pixel-2.png"
 import GooglePixel2XL from "../images/devices/google/google-pixel-2xl.png"
@@ -109,6 +110,7 @@ const IndexPage = () => (
         <DeviceThumbnail title="Apple Macbook Air" image={AppleMacbookAir} />
         <DeviceThumbnail title="Google Pixelbook Go" image={GooglePixelbookGo} />
         <DeviceThumbnail title="Apple Pro Display XDR" image={AppleProDisplayXDR} />
+        <DeviceThumbnail title="Apple iMac 24in" image={AppleIMac24} />
       </div>
     </div>
     {/* <DeviceShowcase title="Apple" subtitle="iPhone SE · iPhone 11 Pro · iPhone 12 Mini · iPhone 12 | 12 Pro · iPhone 12 Pro Max" image={AppleImage} />
