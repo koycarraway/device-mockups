@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "autoprefixer": "^9.0.0",
+    "autoprefixer": "^10.2.5",
     "classnames": "^2.2.6",
     "embla-carousel": "^4.1.0",
     "gatsby": "^2.26.1",
@@ -21,6 +21,7 @@
     "gatsby-plugin-sharp": "^2.8.0",
     "gatsby-source-filesystem": "^2.5.0",
     "gatsby-transformer-sharp": "^2.6.0",
+    "postcss": "^8.2.10",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
@@ -30,7 +31,7 @@
     "react-modal-image": "^2.5.0",
     "react-slick": "^0.27.13",
     "slick-carousel": "^1.8.1",
-    "tailwindcss": "^1.9.6"
+    "tailwindcss": "^2.1.1"
   },
   "devDependencies": {
     "prettier": "2.1.2"
