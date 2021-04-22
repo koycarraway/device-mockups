@@ -1,6 +1,8 @@
 import PropTypes from "prop-types"
 import React from "react"
 import Zoom from 'react-medium-image-zoom'
+import { ICONS } from "./constants"
+import Icon from "./icon"
 
 const DeviceThumbnail = (props) => (
   <div className={`device-thumbnail flex sm:items-center sm:justify-center text-white p-2`}>
