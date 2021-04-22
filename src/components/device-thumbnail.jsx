@@ -5,7 +5,7 @@ import { ICONS } from "./constants"
 import Icon from "./icon"
 
 const DeviceThumbnail = (props) => (
-  <div className={`device-thumbnail flex sm:items-center sm:justify-center text-white p-2`}>
+  <div className={`device-thumbnail flex sm:items-center sm:justify-center dark:text-white p-2`}>
     <Zoom
       overlayBgColorEnd='rgba(0, 0, 0, 0.75)'
       overlayBgColorStart='rgba(0, 0, 0, 0)'

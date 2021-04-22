@@ -71,8 +71,8 @@ const IndexPage = () => (
       <AppleCarousel />
     </div> */}
     <div className={`mx-auto py-3 sm:py-5 px-6 lg:px-8 max-w-xl md:max-w-3xl lg:max-w-4xl mt-12`}>
-      <h2 className={`text-lg sm:text-xl md:text-xxl font-semibold text-center mb-6 sm:mb-8 md:mb-16`}>What's included</h2>
-      <h3 className={`text-lg font-semibold text-center mb-8`}>Mobile Devices</h3>
+      <h2 className={`text-lg sm:text-xl md:text-xxl font-semibold text-center mb-6 sm:mb-8 md:mb-16 dark:text-white`}>What's included</h2>
+      <h3 className={`text-lg font-semibold text-center mb-8 text-gray-500 dark:text-gray-400`}>Mobile Devices</h3>
       <div className={`grid grid-cols-6 gap-2 sm:grid-cols-6 sm:gap-3 lg:grid-cols-7 lg:gap-4 mb-16`}>
         <DeviceThumbnail title="Apple iPhone SE" image={AppleIPhoneSE} />
         <DeviceThumbnail title="Apple iPhone 11 Pro" image={AppleIPhone11Pro} />
@@ -92,7 +92,7 @@ const IndexPage = () => (
         <DeviceThumbnail title="OnePlus 7T Pro" image={OnePlus7TPro} />
         <DeviceThumbnail title="OnePlus 8 Pro" image={OnePlus8Pro} />
       </div>
-      <h3 className={`text-lg font-semibold text-center mb-8`}>Tablets</h3>
+      <h3 className={`text-lg font-semibold text-center mb-8 text-gray-500 dark:text-gray-400`}>Tablets</h3>
       <div className={`grid grid-cols-4 gap-2 lg:gap-12 mb-16`}>
         <DeviceThumbnail title="Apple iPad" image={AppleIPad} />
         <DeviceThumbnail title="Apple iPad Pro" image={AppleIPadPro} />
@@ -103,7 +103,7 @@ const IndexPage = () => (
         <DeviceThumbnail title="Amazon Fire HD 10" image={AmazonFireHD10} />
         <DeviceThumbnail title="Microsoft Surface Pro X" image={MicrosoftSurfaceProX} />
       </div>
-      <h3 className={`text-lg font-semibold text-center mb-8`}>Laptops & Monitors</h3>
+      <h3 className={`text-lg font-semibold text-center mb-8 text-gray-500 dark:text-gray-400`}>Laptops & Monitors</h3>
       <div className={`grid grid-cols-2 gap-3 lg:gap-12 mb-16`}>
         <DeviceThumbnail title="Apple Macbook Pro" image={AppleMacbookPro} />
         <DeviceThumbnail title="Apple Macbook Air" image={AppleMacbookAir} />

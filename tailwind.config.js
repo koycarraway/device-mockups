@@ -8,6 +8,7 @@ module.exports = {
     './src/**/*.vue',
     './src/**/*.jsx',
   ],
+  darkMode: 'class',
   theme: {
     fontSize: {
       xs: ['12px', '16px'],
@@ -34,6 +35,9 @@ module.exports = {
   variants: {
     backgroundImage: ['responsive'],
     gradientColorStops: ['responsive', 'hover', 'focus'],
+    extend: {
+      textOpacity: ['dark']
+    }
   },
   plugins: [],
 }

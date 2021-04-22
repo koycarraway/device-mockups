@@ -599,8 +599,8 @@ pre tt:after {
 
 /* Custom Styles */
 body {
-  background-color: #000;
-  color: #fff;
+  /* background-color: #000; */
+  /* color: #fff; */
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -680,12 +680,16 @@ body {
   width: 100%;
   z-index: 10;
   transition: all .25s ease-in-out;
-  background: linear-gradient(to top, #000 40%, transparent);
+  background: linear-gradient(to top, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0));
   font-size: 13px;
   font-weight: 500;
   line-height: 1.4;
   transform: scale(.95);
   pointer-events: none;
+}
+
+.dark .device-text {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 40%, transparent);
 }
 
 .device-thumbnail:hover .device-text {
@@ -718,7 +722,7 @@ body {
 }
 [data-rmiz-overlay="true"] {
   /* background-color: rgba(0, 0, 0, .5) !important; */
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
 }
 [data-rmiz-wrap] button:focus {
   outline: none;
@@ -753,4 +757,24 @@ body {
   position: absolute;
   transition-property: transform;
   transform-origin: center center;
+}
+
+#darkMode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  /* color: green; */
+}
+
+header {
+  @apply bg-cover;
+  @apply bg-bottom;
+  @apply bg-no-repeat;
+  background-image: url("../images/hero-bg-light@2x.png");
+}
+
+.dark header {
+  background-image: url("../images/hero-bg-dark@2x.png");
 }
