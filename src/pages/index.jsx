@@ -54,7 +54,7 @@ import MicrosoftSurfaceProX from "../images/devices/microsoft/microsoft-surface-
 const IndexPage = () => (
   <Layout>
     <SEO title="Device Mockups"/>
-    <div className={'max-w-4xl mx-auto mt-12'}>
+    <div className={'max-w-4xl mx-auto pt-12'}>
       <Carousel />
     </div>
     <Features />
