@@ -9,12 +9,12 @@ import IconGlobe from "../images/icons/icon-globe.svg"
 
 const Feature = (props) => (
   <div>
-    <div className={`flex sm:items-center sm:justify-center text-white sm:mx-auto`}>
-      <img className={`inline-block mb-0`} src={`${props.icon}`} alt="Icon" height="32" width="32" />
+    <div className={`flex sm:items-center sm:justify-center dark:text-white sm:mx-auto`}>
+      {props.icon}
     </div>
-    <div className={`mt-1 sm:mt-3 md:mt-4 sm:text-center`}>
+    <div className={`mt-1 sm:mt-3 md:mt-4 sm:text-center dark:text-white`}>
       <h5 className={`text-base md:text-md font-semibold mb-0`}>{props.title}</h5>
-      <p className={`mt-1 mb-0 text-sm md:text-base text-gray-600`}>{props.subtitle}</p>
+      <p className={`mt-1 mb-0 text-sm md:text-base text-gray-500 dark:text-gray-500`}>{props.subtitle}</p>
     </div>
   </div>
 )
