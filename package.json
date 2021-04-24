@@ -23,17 +23,19 @@
     "gatsby-transformer-sharp": "^3.3.0",
     "postcss": "^8.2.10",
     "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "react-medium-image-zoom": "^4.3.3",
     "react-modal": "^3.13.1",
     "react-modal-image": "^2.5.0",
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
-    "tailwindcss": "^2.1.1"
+    "tailwindcss": "^2.1.1",
+    "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
+    "gatsby-plugin-dark-mode": "^1.1.2",
     "prettier": "^2.2.1"
   },
   "keywords": [

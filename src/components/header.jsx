@@ -8,10 +8,11 @@ import SonyLogo from "../images/logos/logo-sony.svg"
 import SamsungLogo from "../images/logos/logo-samsung.svg"
 import OnePlusLogo from "../images/logos/logo-oneplus.svg"
 
-import DarkMode from "./dark-mode"
+import DarkMode from "./darkMode"
 
 const Header = () => (
   <header>
+    <DarkMode />
     <div className={`m-auto text-center max-w-full pt-12 sm:pt-24 pb-4 md:pb-7 px-4`} >
       <h1 className={`mb-0 font-semibold text-xl sm:text-xxl md:text-xxxl text-gray-900 dark:text-white text-opacity-75`} >
         Pixel Perfect
@@ -32,7 +33,6 @@ const Header = () => (
       </p>
       <div className={`max-w-md mx-auto flex justify-center`}>
         <Checkout />
-        <DarkMode />
       </div>
     </div>
   </header>
