@@ -23,11 +23,11 @@ module.exports = {
         svgo: true,              // use svgo to optimize SVGs (default)
         replaceAttrValues: { 'none': "currentColor", '#fff': "currentColor", '#000': "currentColor"  },
         svgoConfig: {
-          plugins: [
-            { removeViewBox: true }, // remove viewBox when possible (default)
-            { cleanupIDs: true },    // remove unused IDs and minify remaining IDs (default)
-            { minifyStyles: true }
-          ],
+          plugins: {
+            removeViewBox: true,
+            cleanupIDs: true,
+            minifyStyles: true
+          },
         },
       },
     },

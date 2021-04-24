@@ -43,10 +43,7 @@ const Header = ({ className }) => {
     >
       <DarkMode />
       <div className={`header-content m-auto text-center max-w-full pt-12 sm:pt-24 pb-4 md:pb-7 px-4`} >
-        {/* <h1 className={`mb-0 font-semibold text-xl sm:text-xxl md:text-xxxl text-gray-900 dark:text-white text-opacity-75`} >
-          Pixel Perfect
-        </h1> */}
-        <h1 className={`font-bold text-xl sm:text-xxl md:text-xxxl antialiased bg-clip-text text-transparent bg-gradient-to-r from-green-300 to-purple-600`} >
+        <h1 className={`font-semibold text-xl sm:text-xxl md:text-xxxl tracking-tight antialiased bg-clip-text text-transparent bg-gradient-to-r from-green-300 to-purple-600`} >
           Device Mockups
         </h1>
         <div className={`hidden sm:block sm:my-6 md:my-8 lg:my-12 opacity-75 text-gray-900 dark:text-white`}>
