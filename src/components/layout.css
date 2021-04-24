@@ -786,7 +786,14 @@ body {
   display: none;
 }
 
-header {
+.hero-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+/* header {
   @apply bg-cover;
   @apply bg-bottom;
   @apply bg-no-repeat;
@@ -795,4 +802,4 @@ header {
 
 .dark header {
   background-image: url("../images/hero-bg-dark@2x.png");
-}
+} */
