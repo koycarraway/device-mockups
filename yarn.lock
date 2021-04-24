@@ -35,7 +35,7 @@
   "resolved" "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.13.15.tgz"
   "version" "7.13.15"
 
-"@babel/core@^7.12.3":
+"@babel/core@^7.0.0-0", "@babel/core@^7.12.3":
   "integrity" "sha512-sXHpixBiWWFti0AV2Zq7avpTasr6sIAu7Y396c608541qAU2ui4a193m0KSQmfPSKFZLnQ3cvlKDOm3XkuXm3Q=="
   "resolved" "https://registry.npmjs.org/@babel/core/-/core-7.13.16.tgz"
   "version" "7.13.16"
@@ -727,6 +727,13 @@
   "version" "7.12.13"
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
+
+"@babel/plugin-transform-react-constant-elements@^7.12.1":
+  "integrity" "sha512-SNJU53VM/SjQL0bZhyU+f4kJQz7bQQajnrZRSaU21hruG/NWY41AEM9AWXeXX90pYr/C2yAmTgI6yW3LlLrAUQ=="
+  "resolved" "https://registry.npmjs.org/@babel/plugin-transform-react-constant-elements/-/plugin-transform-react-constant-elements-7.13.13.tgz"
+  "version" "7.13.13"
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.13.0"
 
 "@babel/plugin-transform-react-display-name@^7.12.13":
   "integrity" "sha512-MprESJzI9O5VnJZrL7gg1MpdqmiFcUv41Jc7SahxYsNP2kDkFqClxxTZq+1Qv4AFCamm+GXMRDQINNn+qrxmiA=="
@@ -1649,6 +1656,109 @@
   dependencies:
     "escape-string-regexp" "^2.0.0"
     "lodash.deburr" "^4.1.0"
+
+"@svgr/babel-plugin-add-jsx-attribute@^5.4.0":
+  "integrity" "sha512-ZFf2gs/8/6B8PnSofI0inYXr2SDNTDScPXhN7k5EqD4aZ3gi6u+rbmZHVB8IM3wDyx8ntKACZbtXSm7oZGRqVg=="
+  "resolved" "https://registry.npmjs.org/@svgr/babel-plugin-add-jsx-attribute/-/babel-plugin-add-jsx-attribute-5.4.0.tgz"
+  "version" "5.4.0"
+
+"@svgr/babel-plugin-remove-jsx-attribute@^5.4.0":
+  "integrity" "sha512-yaS4o2PgUtwLFGTKbsiAy6D0o3ugcUhWK0Z45umJ66EPWunAz9fuFw2gJuje6wqQvQWOTJvIahUwndOXb7QCPg=="
+  "resolved" "https://registry.npmjs.org/@svgr/babel-plugin-remove-jsx-attribute/-/babel-plugin-remove-jsx-attribute-5.4.0.tgz"
+  "version" "5.4.0"
+
+"@svgr/babel-plugin-remove-jsx-empty-expression@^5.0.1":
+  "integrity" "sha512-LA72+88A11ND/yFIMzyuLRSMJ+tRKeYKeQ+mR3DcAZ5I4h5CPWN9AHyUzJbWSYp/u2u0xhmgOe0+E41+GjEueA=="
+  "resolved" "https://registry.npmjs.org/@svgr/babel-plugin-remove-jsx-empty-expression/-/babel-plugin-remove-jsx-empty-expression-5.0.1.tgz"
+  "version" "5.0.1"
+
+"@svgr/babel-plugin-replace-jsx-attribute-value@^5.0.1":
+  "integrity" "sha512-PoiE6ZD2Eiy5mK+fjHqwGOS+IXX0wq/YDtNyIgOrc6ejFnxN4b13pRpiIPbtPwHEc+NT2KCjteAcq33/F1Y9KQ=="
+  "resolved" "https://registry.npmjs.org/@svgr/babel-plugin-replace-jsx-attribute-value/-/babel-plugin-replace-jsx-attribute-value-5.0.1.tgz"
+  "version" "5.0.1"
+
+"@svgr/babel-plugin-svg-dynamic-title@^5.4.0":
+  "integrity" "sha512-zSOZH8PdZOpuG1ZVx/cLVePB2ibo3WPpqo7gFIjLV9a0QsuQAzJiwwqmuEdTaW2pegyBE17Uu15mOgOcgabQZg=="
+  "resolved" "https://registry.npmjs.org/@svgr/babel-plugin-svg-dynamic-title/-/babel-plugin-svg-dynamic-title-5.4.0.tgz"
+  "version" "5.4.0"
+
+"@svgr/babel-plugin-svg-em-dimensions@^5.4.0":
+  "integrity" "sha512-cPzDbDA5oT/sPXDCUYoVXEmm3VIoAWAPT6mSPTJNbQaBNUuEKVKyGH93oDY4e42PYHRW67N5alJx/eEol20abw=="
+  "resolved" "https://registry.npmjs.org/@svgr/babel-plugin-svg-em-dimensions/-/babel-plugin-svg-em-dimensions-5.4.0.tgz"
+  "version" "5.4.0"
+
+"@svgr/babel-plugin-transform-react-native-svg@^5.4.0":
+  "integrity" "sha512-3eYP/SaopZ41GHwXma7Rmxcv9uRslRDTY1estspeB1w1ueZWd/tPlMfEOoccYpEMZU3jD4OU7YitnXcF5hLW2Q=="
+  "resolved" "https://registry.npmjs.org/@svgr/babel-plugin-transform-react-native-svg/-/babel-plugin-transform-react-native-svg-5.4.0.tgz"
+  "version" "5.4.0"
+
+"@svgr/babel-plugin-transform-svg-component@^5.5.0":
+  "integrity" "sha512-q4jSH1UUvbrsOtlo/tKcgSeiCHRSBdXoIoqX1pgcKK/aU3JD27wmMKwGtpB8qRYUYoyXvfGxUVKchLuR5pB3rQ=="
+  "resolved" "https://registry.npmjs.org/@svgr/babel-plugin-transform-svg-component/-/babel-plugin-transform-svg-component-5.5.0.tgz"
+  "version" "5.5.0"
+
+"@svgr/babel-preset@^5.5.0":
+  "integrity" "sha512-4FiXBjvQ+z2j7yASeGPEi8VD/5rrGQk4Xrq3EdJmoZgz/tpqChpo5hgXDvmEauwtvOc52q8ghhZK4Oy7qph4ig=="
+  "resolved" "https://registry.npmjs.org/@svgr/babel-preset/-/babel-preset-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@svgr/babel-plugin-add-jsx-attribute" "^5.4.0"
+    "@svgr/babel-plugin-remove-jsx-attribute" "^5.4.0"
+    "@svgr/babel-plugin-remove-jsx-empty-expression" "^5.0.1"
+    "@svgr/babel-plugin-replace-jsx-attribute-value" "^5.0.1"
+    "@svgr/babel-plugin-svg-dynamic-title" "^5.4.0"
+    "@svgr/babel-plugin-svg-em-dimensions" "^5.4.0"
+    "@svgr/babel-plugin-transform-react-native-svg" "^5.4.0"
+    "@svgr/babel-plugin-transform-svg-component" "^5.5.0"
+
+"@svgr/core@^5.5.0":
+  "integrity" "sha512-q52VOcsJPvV3jO1wkPtzTuKlvX7Y3xIcWRpCMtBF3MrteZJtBfQw/+u0B1BHy5ColpQc1/YVTrPEtSYIMNZlrQ=="
+  "resolved" "https://registry.npmjs.org/@svgr/core/-/core-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@svgr/plugin-jsx" "^5.5.0"
+    "camelcase" "^6.2.0"
+    "cosmiconfig" "^7.0.0"
+
+"@svgr/hast-util-to-babel-ast@^5.5.0":
+  "integrity" "sha512-cAaR/CAiZRB8GP32N+1jocovUtvlj0+e65TB50/6Lcime+EA49m/8l+P2ko+XPJ4dw3xaPS3jOL4F2X4KWxoeQ=="
+  "resolved" "https://registry.npmjs.org/@svgr/hast-util-to-babel-ast/-/hast-util-to-babel-ast-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@babel/types" "^7.12.6"
+
+"@svgr/plugin-jsx@^5.5.0":
+  "integrity" "sha512-V/wVh33j12hGh05IDg8GpIUXbjAPnTdPTKuP4VNLggnwaHMPNQNae2pRnyTAILWCQdz5GyMqtO488g7CKM8CBA=="
+  "resolved" "https://registry.npmjs.org/@svgr/plugin-jsx/-/plugin-jsx-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@babel/core" "^7.12.3"
+    "@svgr/babel-preset" "^5.5.0"
+    "@svgr/hast-util-to-babel-ast" "^5.5.0"
+    "svg-parser" "^2.0.2"
+
+"@svgr/plugin-svgo@^5.5.0":
+  "integrity" "sha512-r5swKk46GuQl4RrVejVwpeeJaydoxkdwkM1mBKOgJLBUJPGaLci6ylg/IjhrRsREKDkr4kbMWdgOtbXEh0fyLQ=="
+  "resolved" "https://registry.npmjs.org/@svgr/plugin-svgo/-/plugin-svgo-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "cosmiconfig" "^7.0.0"
+    "deepmerge" "^4.2.2"
+    "svgo" "^1.2.2"
+
+"@svgr/webpack@^5.5.0", "@svgr/webpack@>=2.0.0":
+  "integrity" "sha512-DOBOK255wfQxguUta2INKkzPj6AIS6iafZYiYmHn6W3pHlycSRRlvWKCfLDG10fXfLWqE3DJHgRUOyJYmARa7g=="
+  "resolved" "https://registry.npmjs.org/@svgr/webpack/-/webpack-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "@babel/core" "^7.12.3"
+    "@babel/plugin-transform-react-constant-elements" "^7.12.1"
+    "@babel/preset-env" "^7.12.1"
+    "@babel/preset-react" "^7.12.5"
+    "@svgr/core" "^5.5.0"
+    "@svgr/plugin-jsx" "^5.5.0"
+    "@svgr/plugin-svgo" "^5.5.0"
+    "loader-utils" "^2.0.0"
 
 "@szmarczak/http-timer@^1.1.2":
   "integrity" "sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA=="
@@ -4360,7 +4470,7 @@
   "resolved" "https://registry.npmjs.org/deep-is/-/deep-is-0.1.3.tgz"
   "version" "0.1.3"
 
-"deepmerge@^4.0.0":
+"deepmerge@^4.0.0", "deepmerge@^4.2.2":
   "integrity" "sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg=="
   "resolved" "https://registry.npmjs.org/deepmerge/-/deepmerge-4.2.2.tgz"
   "version" "4.2.2"
@@ -6170,6 +6280,11 @@
     "svgo" "1.3.2"
     "uuid" "3.4.0"
 
+"gatsby-plugin-svgr@*":
+  "integrity" "sha512-oALTh6VwO6l3khgC/vGr706aqt38EkXwdr6iXVei/auOKGxpCLEuDCQVal1a4SpYXdjHjRsEyab6bxaHL2lzsA=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-svgr/-/gatsby-plugin-svgr-3.0.0-beta.0.tgz"
+  "version" "3.0.0-beta.0"
+
 "gatsby-plugin-typescript@^3.3.0":
   "integrity" "sha512-N3+pXLViKdP1vFnnocei9C9a0cMeER6vZQW9hfGFR/vV/RZgnvCOJNDpEsjMdTjslTtyikdJqn0T24t1JpaJXw=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-typescript/-/gatsby-plugin-typescript-3.3.0.tgz"
@@ -6314,7 +6429,7 @@
     "semver" "^7.3.4"
     "sharp" "^0.28.0"
 
-"gatsby@^2.0.0 || ^3.0.0", "gatsby@^3.0.0", "gatsby@^3.0.0-next.0", "gatsby@^3.3.1":
+"gatsby@^2.0.0 || ^3.0.0", "gatsby@^3.0.0", "gatsby@^3.0.0-next.0", "gatsby@^3.3.1", "gatsby@>=3.0.0":
   "integrity" "sha512-Eprejb4317ZYFZXYdXErYGcOZuscXIln5v0JTPFbXtejrM+MMr7qa3GF8NztyOH3alpqAMXm6LyHDMf9oQpLSA=="
   "resolved" "https://registry.npmjs.org/gatsby/-/gatsby-3.3.1.tgz"
   "version" "3.3.1"
@@ -12700,7 +12815,12 @@
   dependencies:
     "has-flag" "^4.0.0"
 
-"svgo@^1.0.0", "svgo@1.3.2":
+"svg-parser@^2.0.2":
+  "integrity" "sha512-e4hG1hRwoOdRb37cIMSgzNsxyzKfayW6VOflrwvR+/bzrkyxY/31WkbgnQpgtrNp1SdpJvpUAGTa/ZoiPNDuRQ=="
+  "resolved" "https://registry.npmjs.org/svg-parser/-/svg-parser-2.0.4.tgz"
+  "version" "2.0.4"
+
+"svgo@^1.0.0", "svgo@^1.2.2", "svgo@1.3.2":
   "integrity" "sha512-yhy/sQYxR5BkC98CY7o31VGsg014AKLEPxdfhora76l36hD9Rdy5NZA/Ocn6yayNPgSamYdtX2rFJdcv07AYVw=="
   "resolved" "https://registry.npmjs.org/svgo/-/svgo-1.3.2.tgz"
   "version" "1.3.2"

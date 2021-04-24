@@ -759,6 +759,10 @@ body {
   transform-origin: center center;
 }
 
+body.dark {
+  background-color: #000;
+}
+
 .dark-mode-toggle {
   position: fixed;
   z-index: 100;
