@@ -21,14 +21,7 @@ module.exports = {
       options: {
         prettier: true,          // use prettier to format JS code output (default)
         svgo: true,              // use svgo to optimize SVGs (default)
-        replaceAttrValues: { 'none': "currentColor", '#fff': "currentColor", '#000': "currentColor"  },
-        svgoConfig: {
-          plugins: {
-            removeViewBox: true,
-            cleanupIDs: true,
-            minifyStyles: true
-          },
-        },
+        replaceAttrValues: { 'none': "currentColor", '#fff': "currentColor", '#000': "currentColor"  }
       },
     },
     `gatsby-plugin-image`,
