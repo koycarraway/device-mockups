@@ -5918,7 +5918,7 @@
   "resolved" "https://registry.npmjs.org/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz"
   "version" "1.0.1"
 
-"gatsby-background-image@^1.4.1":
+"gatsby-background-image@^1.4.1", "gatsby-background-image@^1.5.2":
   "integrity" "sha512-pENYmggaF+tQW2YN21stDvdU4ClL7lxtqDOp2QI4qXKN2M610zewHyQJpw3iXmMwV7N9KQIeOReLmwqGmU1VwA=="
   "resolved" "https://registry.npmjs.org/gatsby-background-image/-/gatsby-background-image-1.5.2.tgz"
   "version" "1.5.2"
