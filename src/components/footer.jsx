@@ -1,5 +1,5 @@
 import React from "react"
-import Koymoji from "../images/koymoji@2x.png"
+import Koymoji from "../images/koytoyface-purple.png"
 import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 const Footer = () => (
