@@ -15,18 +15,7 @@ module.exports = {
       xl: ['36px', '42px'],
       xxl: ['56px', '64px'],
       xxxl: ['80px', '86px'],
-    },
-    backgroundImage: {
-      'gradient-to-t': 'linear-gradient(to top, var(--gradient-color-stops))',
-      'gradient-to-tr': 'linear-gradient(to top right, var(--gradient-color-stops))',
-      'gradient-to-r': 'linear-gradient(to right, var(--gradient-color-stops))',
-      'gradient-to-br': 'linear-gradient(to bottom right, var(--gradient-color-stops))',
-      'gradient-to-b': 'linear-gradient(to bottom, var(--gradient-color-stops))',
-      'gradient-to-bl': 'linear-gradient(to bottom left, var(--gradient-color-stops))',
-      'gradient-to-l': 'linear-gradient(to left, var(--gradient-color-stops))',
-      'gradient-to-tl': 'linear-gradient(to top left, var(--gradient-color-stops))',
-    },
-    gradientColorStops: (theme) => theme('colors'),
+    }
   },
   variants: {
     backgroundImage: ['responsive'],
