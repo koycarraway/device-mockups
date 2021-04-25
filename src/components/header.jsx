@@ -47,15 +47,15 @@ const Header = ({ className }) => {
           Device Mockups
         </h1>
         <div className={`hidden sm:block sm:my-6 md:my-8 lg:my-12 opacity-75 text-gray-900 dark:text-white`}>
-          <GoogleLogo className={`inline-block mx-3 sm:mx-5 md:mx-7 mb-0 h-5 sm:h-6 md:h-8`} />
-          <SonyLogo className={`inline-block mx-3 sm:mx-5 md:mx-7 mb-0 h-5 sm:h-6 md:h-8`} />
-          <MicrosoftLogo className={`inline-block mx-3 sm:mx-5 md:mx-7 mb-0 h-5 sm:h-6 md:h-8`} />
-          <AppleLogo className={`inline-block mx-3 sm:mx-5 md:mx-7 mb-0 h-5 sm:h-6 md:h-8`} />
-          <SamsungLogo className={`inline-block mx-3 sm:mx-5 md:mx-7 mb-0 h-5 sm:h-6 md:h-8`} />
-          <AmazonLogo className={`inline-block mx-3 sm:mx-5 md:mx-7 mb-0 h-5 sm:h-6 md:h-8`} />
-          <OnePlusLogo className={`inline-block mx-3 sm:mx-5 md:mx-7 mb-0 h-5 sm:h-6 md:h-8`} />
+          <GoogleLogo className={`inline-block mx-3 sm:mx-5 md:mx-7 my-2 h-5 sm:h-6 md:h-8`} />
+          <SonyLogo className={`inline-block mx-3 sm:mx-5 md:mx-7 my-2 h-5 sm:h-6 md:h-8`} />
+          <MicrosoftLogo className={`inline-block mx-3 sm:mx-5 md:mx-7 my-2 h-5 sm:h-6 md:h-8`} />
+          <AppleLogo className={`inline-block mx-3 sm:mx-5 md:mx-7 my-2 h-5 sm:h-6 md:h-8`} />
+          <SamsungLogo className={`inline-block mx-3 sm:mx-5 md:mx-7 my-2 h-5 sm:h-6 md:h-8`} />
+          <AmazonLogo className={`inline-block mx-3 sm:mx-5 md:mx-7 my-2 h-5 sm:h-6 md:h-8`} />
+          <OnePlusLogo className={`inline-block mx-3 sm:mx-5 md:mx-7 my-2 h-5 sm:h-6 md:h-8`} />
         </div>
-        <p className={`mb-6 text-base sm:text-md md:text-lg text-gray-400 dark:text-gray-600 m-auto max-w-lg`}>
+        <p className={`mb-6 text-base sm:text-md md:text-lg text-gray-400 dark:text-gray-400 m-auto max-w-lg`}>
         A constantly growing library of pixel-perfect devices for your design mockups and commercial projects.
         </p>
         <div className={`max-w-md mx-auto flex justify-center`}>
