@@ -1,7 +1,5 @@
 import React from 'react'
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-import { ICONS } from "./constants"
-import Icon from "./icon"
 
 import { ReactComponent as Moon } from "../images/icons/icon-moon.svg"
 import { ReactComponent as Sun } from "../images/icons/icon-sun.svg"
@@ -33,7 +31,6 @@ class darkMode extends React.Component {
                 }
                 checked={theme === 'dark'}
               />{' '}
-              {/* <Icon icon={ theme === 'dark' ? `${ICONS.SUN}` : `${ICONS.MOON}` } size="24" /> */}
               {ToggleIcons()}
             </label>
           )
