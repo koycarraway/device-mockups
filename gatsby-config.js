@@ -24,7 +24,7 @@ module.exports = {
         replaceAttrValues: { 'none': "currentColor", '#fff': "currentColor", '#000': "currentColor"  },
         svgoConfig: {
           plugins: {
-            removeViewBox: true,
+            removeViewBox: false,
             cleanupIDs: true,
             minifyStyles: true
           },
