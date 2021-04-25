@@ -753,6 +753,9 @@ body {
 [data-rmiz-btn-close] {
   cursor: zoom-out;
 }
+[data-rmiz-btn-close]:focus {
+  outline: none;
+}
 [data-rmiz-modal-content] {
   position: absolute;
   transition-property: transform;
@@ -765,25 +768,16 @@ body.dark {
 
 .dark-mode-toggle {
   position: fixed;
-  z-index: 100;
+  z-index: 999;
   display: flex;
   top: 30px;
   right: 30px;
   width: 44px;
   height: 44px;
-  background-color: transparent;
+  background-color: #fff;
   border-radius: 50%;
-  box-shadow: 0 0px 0px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-}
-
-.dark .dark-mode-toggle {
-  box-shadow: 0 0px 0px 1px rgba(255, 255, 255, 1.0);
-  /* box-shadow: 0 2px 32px -2px rgba(255, 255, 255, 0.5); */
-}
-
-.dark .dark-mode-toggle:hover {
-  background-color: rgba(255, 255, 255, .1);
 }
 
 .dark-mode-toggle input {
