@@ -42,24 +42,24 @@ const Header = ({ className }) => {
       backgroundColor={`#000`}
     >
       <DarkMode />
-      <div className={`header-content m-auto text-center max-w-full pt-12 sm:pt-24 pb-4 md:pb-7 px-4`} >
-        <h1 className={`font-semibold text-xl sm:text-xxl md:text-xxxl tracking-tight antialiased bg-clip-text text-transparent bg-gradient-to-r from-green-300 to-purple-600`} >
+      <div className={`header-content m-auto text-center max-w-full pt-12 sm:pt-20 pb-4 md:pb-0 px-4`} >
+        <h1 className={`font-semibold text-xl sm:text-xxl md:text-xxxl tracking-tight text-white`} >
           Device Mockups
         </h1>
-        <div className={`hidden sm:block sm:my-6 md:my-8 lg:my-12 opacity-75 text-gray-900 dark:text-white`}>
-          <GoogleLogo className={`inline-block sm:mx-3 md:mx-5 my-2 sm:h-7 md:h-8`} />
-          <SonyLogo className={`inline-block sm:mx-3 md:mx-5 my-2 sm:h-7 md:h-8`} />
-          <MicrosoftLogo className={`inline-block sm:mx-3 md:mx-5 my-2 sm:h-7 md:h-8`} />
-          <AppleLogo className={`inline-block sm:mx-3 md:mx-5 my-2 sm:h-7 md:h-8`} />
-          <SamsungLogo className={`inline-block sm:mx-3 md:mx-5 my-2 sm:h-7 md:h-8`} />
-          <AmazonLogo className={`inline-block sm:mx-3 md:mx-5 my-2 sm:h-7 md:h-8`} />
-          <OnePlusLogo className={`inline-block sm:mx-3 md:mx-5 my-2 sm:h-7 md:h-8`} />
-        </div>
         <p className={`mb-6 text-base sm:text-md md:text-lg text-gray-400 dark:text-gray-400 m-auto max-w-lg`}>
         A constantly growing library of pixel-perfect devices for your design mockups and commercial projects.
         </p>
         <div className={`max-w-md mx-auto flex justify-center`}>
           <Checkout />
+        </div>
+        <div className={`hidden sm:block mt-16 opacity-50 text-gray-900 dark:text-white`}>
+          <GoogleLogo className={`inline-block sm:mx-3 md:mx-4 my-2 sm:h-7`} />
+          <SonyLogo className={`inline-block sm:mx-3 md:mx-4 my-2 sm:h-7`} />
+          <MicrosoftLogo className={`inline-block sm:mx-3 md:mx-4 my-2 sm:h-7`} />
+          <AppleLogo className={`inline-block sm:mx-3 md:mx-4 my-2 sm:h-7`} />
+          <SamsungLogo className={`inline-block sm:mx-3 md:mx-4 my-2 sm:h-7`} />
+          <AmazonLogo className={`inline-block sm:mx-3 md:mx-4 my-2 sm:h-7`} />
+          <OnePlusLogo className={`inline-block sm:mx-3 md:mx-4 my-2 sm:h-7`} />
         </div>
       </div>
     </BackgroundImage>

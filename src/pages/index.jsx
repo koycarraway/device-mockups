@@ -44,11 +44,11 @@ import MicrosoftSurfaceProX from "../images/devices/microsoft/microsoft-surface-
 const IndexPage = () => (
   <Layout>
     <SEO title="Device Mockups"/>
-    <div className={'max-w-4xl mx-auto pt-12'}>
+    <div className={'max-w-4xl mx-auto pt-8'}>
       <Carousel />
     </div>
     <Features />
-    <div className={`mx-auto py-3 sm:py-5 px-6 lg:px-8 max-w-xl md:max-w-3xl lg:max-w-4xl mt-12`}>
+    <div className={`mx-auto py-3 sm:py-5 px-6 lg:px-8 max-w-xl md:max-w-3xl lg:max-w-5xl mt-12`}>
       <h2 className={`text-lg sm:text-xl md:text-xxl font-semibold text-center mb-6 sm:mb-8 md:mb-16 dark:text-white`}>What's included</h2>
       <h3 className={`text-lg font-semibold text-center mb-8 text-gray-500 dark:text-gray-400`}>Mobile Devices</h3>
       <div className={`grid grid-cols-6 gap-2 sm:grid-cols-6 sm:gap-3 lg:grid-cols-7 lg:gap-4 mb-16`}>
