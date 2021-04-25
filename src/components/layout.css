@@ -720,10 +720,6 @@ body {
   backdrop-filter: blur(0);
   transition: all .2s ease-in-out;
 }
-[data-rmiz-overlay="true"] {
-  /* background-color: rgba(0, 0, 0, .5) !important; */
-  backdrop-filter: blur(10px);
-}
 [data-rmiz-wrap] button:focus {
   outline: none;
 }
