@@ -1,7 +1,6 @@
 import React from "react"
 import Koymoji from "../images/config-avatar.png"
 import { OutboundLink } from "gatsby-plugin-google-gtag"
-import Checkout from "./checkout"
 
 const Footer = () => (
   <footer className={`m-auto text-center pb-10`} >
@@ -9,9 +8,6 @@ const Footer = () => (
       <p className={`mb-6 text-base sm:text-md md:text-lg text-gray-400 dark:text-gray-400 m-auto max-w-lg md:max-w-xl`}>
         A growing library of pixel-perfect mobile, tablet, and desktop devices for your design mockups and commercial projects.
       </p>
-      <div className={`max-w-md mx-auto flex justify-center`}>
-        <Checkout />
-      </div>
     </div>
     <OutboundLink href="https://twitter.com/koycarraway" target="_blank" rel="noreferrer">
       <img src={Koymoji} alt="Koy Carraway" className={`rounded-full m-auto mb-4`} width="48" height="48" />
