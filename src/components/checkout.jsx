@@ -26,6 +26,7 @@ class Checkout extends React.Component {
         href="https://gumroad.com/l/gWKrQ?wanted=true" 
         rel="noreferrer" 
         target="_blank" 
+        data-gumroad-single-product="true"
         className={`${baseStyles}`}
         onClick={this.handleClick}
       >
