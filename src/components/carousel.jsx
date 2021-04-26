@@ -14,7 +14,7 @@ export default class SimpleSlider extends Component {
       infinite: true,
       slidesToShow: 1,
       speed: 1000,
-      dots: false,
+      dots: true,
       arrows: false,
       fade: true,
       autoplay: true,
@@ -26,13 +26,13 @@ export default class SimpleSlider extends Component {
       <>
         <Slider ref={slider => (this.slider = slider)} {...settings}>
           <div>
-            <img className={`rounded-md md:rounded-lg`} src={DesignToolFigma} alt=" Figma Design Tool" height="620" />
+            <img className={`rounded-md md:rounded-lg`} src={DesignToolFigma} alt=" Figma Design Tool" height="764" />
           </div>
           <div>
-            <img className={`rounded-md md:rounded-lg`} src={DesignToolSketch} alt=" Sketch Design Tool" height="620" />
+            <img className={`rounded-md md:rounded-lg`} src={DesignToolSketch} alt=" Sketch Design Tool" height="764" />
           </div>
           <div>
-            <img className={`rounded-md md:rounded-lg`} src={DesignToolXD} alt=" Adobe XD Design Tool" height="620" />
+            <img className={`rounded-md md:rounded-lg`} src={DesignToolXD} alt=" Adobe XD Design Tool" height="764" />
           </div>
         </Slider>
       </>

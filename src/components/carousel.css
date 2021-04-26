@@ -102,12 +102,17 @@
 	display: none
 }
 
+.slick-slider:hover .slick-prev, .slick-slider:hover .slick-next {
+	opacity: 1;
+}
+
 .slick-prev, .slick-next {
 	font-size: 0;
 	line-height: 0;
 	position: absolute;
 	top: 50%;
 	display: block;
+	opacity: 0;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -130,19 +135,24 @@
 	background-color: rgba(210, 210, 210, .5);
 }
 
+.slick-prev:focus, .slick-next:focus {
+	outline: none;
+	border: none;
+}
+
 .slick-prev {
-	left: 16px;
+	left: 28px;
 	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1IDVMOCAxMkwxNSAxOSIgc3Ryb2tlPSIjNEQ1MzU5IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K);
 }
 
 .slick-next {
-	right: 16px;
+	right: 28px;
 	background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkgNUwxNiAxMkw5IDE5IiBzdHJva2U9IiM0RDUzNTkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=);
 }
 
 .slick-dots {
   position: absolute;
-	bottom: 12px;
+	bottom: 18px;
 	display: block;
 	width: 100%;
 	padding: 0;
@@ -160,7 +170,7 @@
 .slick-dots li {
 	position: relative;
 	display: inline-block;
-	margin: 0 4px;
+	margin: 0 6px;
 	padding: 0;
 	cursor: pointer;
 }
@@ -169,7 +179,7 @@
   font-size: 0;
 	line-height: 0;
 	display: block;
-	padding: 2px;
+	padding: 3px 1px;
 	border: 0;
 	outline: none;
 	background: transparent;
@@ -179,21 +189,21 @@
 	position: relative;
 	display: block;
 	content: "";
-	width: 32px;
-	height: 2px;
-	background-color: rgba(15, 15, 15, .15);
+	width: 40px;
+	height: 3px;
+	background-color: rgba(255, 255, 255, .15);
 	backdrop-filter: blur(8px);
 	transition: all .25s ease-in-out;
 }
 
 .slick-dots li:hover button:before {
-	background-color: rgba(15, 15, 15, .40);
+	background-color: rgba(255, 255, 255, .40);
 }
 
 .slick-dots li:active button:before {
-	background-color: rgba(15, 15, 15, .75);
+	background-color: rgba(255, 255, 255, .80);
 }
 
 .slick-dots li.slick-active button:before {
-	background-color: rgba(15, 15, 15, .75);
+	background-color: rgba(255, 255, 255, .80);
 }

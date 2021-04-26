@@ -1,6 +1,5 @@
 import React from "react"
 import Checkout from "./checkout"
-import { StaticImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
 import { ReactComponent as AppleLogo } from "../images/logos/logo-apple.svg"
@@ -10,8 +9,6 @@ import { ReactComponent as MicrosoftLogo } from "../images/logos/logo-microsoft.
 import { ReactComponent as GoogleLogo } from "../images/logos/logo-google.svg"
 import { ReactComponent as SonyLogo } from "../images/logos/logo-sony.svg"
 import { ReactComponent as OnePlusLogo } from "../images/logos/logo-oneplus.svg"
-
-// import HeroBG from "../images/hero-bg@2x.png"
 
 import DarkMode from "./darkMode"
 
@@ -46,8 +43,8 @@ const Header = ({ className }) => {
         <h1 className={`font-semibold text-xl sm:text-xxl md:text-xxxl tracking-tight text-white`} >
           Device Mockups
         </h1>
-        <p className={`mb-6 text-base sm:text-md md:text-lg text-gray-400 dark:text-gray-400 m-auto max-w-lg`}>
-        A constantly growing library of pixel-perfect devices for your design mockups and commercial projects.
+        <p className={`mb-6 text-base sm:text-md md:text-lg text-gray-400 dark:text-gray-400 m-auto max-w-lg md:max-w-xl`}>
+        A growing library of pixel-perfect mobile, tablet, and desktop devices for your design mockups and commercial projects.
         </p>
         <div className={`max-w-md mx-auto flex justify-center`}>
           <Checkout />
