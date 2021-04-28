@@ -10,8 +10,6 @@ import { ReactComponent as GoogleLogo } from "../images/logos/logo-google.svg"
 import { ReactComponent as SonyLogo } from "../images/logos/logo-sony.svg"
 import { ReactComponent as OnePlusLogo } from "../images/logos/logo-oneplus.svg"
 
-import DarkMode from "./darkMode"
-
 const Header = ({ className }) => {
   const data = useStaticQuery(
     graphql`
@@ -38,7 +36,6 @@ const Header = ({ className }) => {
       fadeIn='soft'
       backgroundColor={`#000`}
     >
-      <DarkMode />
       <div className={`header-content m-auto text-center max-w-full pt-12 sm:pt-20 pb-4 md:pb-0 px-4`} >
         <h1 className={`font-semibold text-xl sm:text-xxl md:text-xxxl tracking-tight text-white`} >
           Device Mockups

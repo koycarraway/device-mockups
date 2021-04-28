@@ -1,0 +1,148 @@
+.dark-mode-toggle {
+  position: fixed;
+  z-index: 999;
+  display: inline-block;
+  top: 30px;
+  right: 30px;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+.dark-mode-toggle {
+  background-color: rgba(150, 150, 150, 0.1);
+}
+
+.dark .dark-mode-toggle {
+  background-color: rgba(150, 150, 150, 0.25);
+}
+
+.dark-mode-toggle input {
+  display: none;
+}
+
+.dark-circle {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  color: #616670;
+}
+
+.light-circle {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 2;
+  color: #afb4bd;
+}
+
+.dark-mode-light .light-circle {
+  z-index: 1;
+  transform: translate(4px, 4px);
+  animation: light-part-animation-in .5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.dark-mode-light .dark-circle {
+  z-index: 2;
+  transform: translate(-4px, -4px);
+  animation: dark-part-animation-in .5s cubic-bezier(0.76, 0, 0.24, 1);
+  
+}
+
+.dark-mode-dark .light-circle {
+  z-index: 2;
+  animation: light-part-animation-out .5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.dark-mode-dark .dark-circle {
+  z-index: 1;
+  animation: dark-part-animation-out .5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+@keyframes light-part-animation-in {
+  0% {
+      transform: translate(0);
+      z-index:2
+  }
+
+  60% {
+      transform: translate(8px, 8px);
+      z-index:2
+  }
+
+  80% {
+      z-index:1
+  }
+
+  to {
+      transform: translate(4px, 4px);
+      z-index:1
+  }
+}
+
+@keyframes light-part-animation-out {
+  0% {
+      transform: translate(4px, 4px);
+      z-index:1
+  }
+
+  60% {
+      transform: translate(8px, 8px);
+      z-index:1
+  }
+
+  80% {
+      z-index:2
+  }
+
+  to {
+      transform: translate(0);
+      z-index:2
+  }
+}
+
+@keyframes dark-part-animation-in {
+  0% {
+      transform: translate(0);
+      z-index:1
+  }
+
+  60% {
+      transform: translate(-8px, -8px);
+      z-index:1
+  }
+
+  80% {
+      z-index:2
+  }
+
+  to {
+      transform: translate(-4px, -4px);
+      z-index:2
+  }
+}
+
+@keyframes dark-part-animation-out {
+  0% {
+      transform: translate(-4px, -4px);
+      z-index:2
+  }
+
+  60% {
+      transform: translate(-8px, -8px);
+      z-index:2
+  }
+
+  80% {
+      z-index:1
+  }
+
+  to {
+      transform: translate(0);
+      z-index: 1
+  }
+}

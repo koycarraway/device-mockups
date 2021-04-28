@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import DarkModeToggle from "./darkModeToggle"
 import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
@@ -26,7 +27,8 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <> 
+      <DarkModeToggle />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main className={`m-auto max-w-lg sm:max-w-xl md:max-w-3xl lg:max-w-full dark:bg-black`} >
         {children}

@@ -762,24 +762,6 @@ body.dark {
   background-color: #000;
 }
 
-.dark-mode-toggle {
-  position: fixed;
-  z-index: 999;
-  display: flex;
-  top: 30px;
-  right: 30px;
-  width: 44px;
-  height: 44px;
-  background-color: #fff;
-  border-radius: 50%;
-  box-shadow: 0 8px 30px -4px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-
-.dark-mode-toggle input {
-  display: none;
-}
-
 .hero-bg {
   position: absolute;
   top: 0;
