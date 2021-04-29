@@ -8,8 +8,8 @@ const Feature = (props) => (
       {props.icon}
     </div>
     <div className={`mt-1 sm:mt-3 md:mt-4 sm:text-center dark:text-white`}>
-      <h5 className={`text-base md:text-md font-semibold mb-0`}>{props.title}</h5>
-      <p className={`mt-1 mb-0 text-sm md:text-base text-gray-500 dark:text-gray-500`}>{props.subtitle}</p>
+      <h4 className={`text-base md:text-md font-semibold mb-0`}>{props.title}</h4>
+      <p className={`mt-1 mb-0 text-sm md:text-base text-gray-600 dark:text-gray-400`}>{props.subtitle}</p>
     </div>
   </div>
 )
