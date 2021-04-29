@@ -12,8 +12,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import DarkModeToggle from "./darkModeToggle"
 import Header from "./header"
 import Footer from "./footer"
-import "./layout.css"
+import "./reset.css"
+import "./style.css"
 import "./carousel.css"
+import "./medium-zoom.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

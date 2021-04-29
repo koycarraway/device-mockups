@@ -2,6 +2,8 @@ import React from "react"
 import Checkout from "./checkout"
 import { graphql, useStaticQuery } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
+import "./header.css"
+
 import { ReactComponent as AppleLogo } from "../images/logos/logo-apple.svg"
 import { ReactComponent as SamsungLogo } from "../images/logos/logo-samsung.svg"
 import { ReactComponent as AmazonLogo } from "../images/logos/logo-amazon.svg"

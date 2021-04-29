@@ -2,9 +2,6 @@ import React from 'react'
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import "./darkModeToggle.css"
 
-import { ReactComponent as Moon } from "../images/icons/icon-moon.svg"
-import { ReactComponent as Sun } from "../images/icons/icon-sun.svg"
-
 class darkMode extends React.Component {
   render() {
     return (

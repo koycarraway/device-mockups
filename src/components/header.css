@@ -1,0 +1,41 @@
+.header-content {
+  position: relative;
+}
+
+.header-content:before {
+  @apply bg-gradient-to-t;
+  @apply from-white;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.dark .header-content:before {
+  @apply bg-gradient-to-t;
+  @apply from-black;
+}
+
+.header-content:after {
+  @apply bg-gradient-to-t;
+  @apply from-white;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  z-index: 0;
+}
+
+.dark .header-content:after {
+  @apply bg-gradient-to-t;
+  @apply from-black;
+}
