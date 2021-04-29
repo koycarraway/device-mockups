@@ -769,6 +769,51 @@ body.dark {
   z-index: 0;
 }
 
+.header-content {
+  position: relative;
+}
+
+.header-content:before {
+  @apply bg-gradient-to-b;
+  @apply from-transparent;
+  @apply to-white;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.dark .header-content:before {
+  @apply bg-gradient-to-b;
+  @apply from-transparent;
+  @apply to-black;
+}
+
+.header-content:after {
+  @apply bg-gradient-to-b;
+  @apply from-transparent;
+  @apply to-white;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  z-index: 0;
+}
+
+.dark .header-content:after {
+  @apply bg-gradient-to-b;
+  @apply from-transparent;
+  @apply to-black;
+}
 /* header {
   @apply bg-cover;
   @apply bg-bottom;
