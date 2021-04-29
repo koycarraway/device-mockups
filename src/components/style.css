@@ -1,9 +1,14 @@
 /* Custom Styles */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply font-sans;
+}
+
+body.light {
+  @apply bg-white;
+  transition: background-color .5s ease-in-out;
 }
 
 body.dark {
-  background-color: #000;
+  @apply bg-black;
+  transition: background-color .5s ease-in-out;
 }

@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
     <> 
       <DarkModeToggle />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <main className={`m-auto max-w-lg sm:max-w-xl md:max-w-3xl lg:max-w-full dark:bg-black`} >
+      <main className={`m-auto max-w-lg sm:max-w-xl md:max-w-3xl lg:max-w-full`} >
         {children}
       </main>
       <Footer />
