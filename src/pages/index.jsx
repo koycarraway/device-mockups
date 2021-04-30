@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Carousel from "../components/carousel"
 import Features from "../components/features"
 import DeviceThumbnail from "../components/device-thumbnail"
@@ -43,7 +43,7 @@ import MicrosoftSurfaceProX from "../images/devices/microsoft/microsoft-surface-
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Device Mockups"/>
+    <Seo title="Device Mockups"/>
     <div className={'max-w-3xl sm:max-w-4xl md:max-w-5xl mx-auto pt-8'}>
       <Carousel />
     </div>
