@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-
-import DesignToolFigma from "../images/media/design-tool-showcase-figma@2x.png"
-import DesignToolSketch from "../images/media/design-tool-showcase-sketch@2x.png"
-import DesignToolXD from "../images/media/design-tool-showcase-xd@2x.png"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default class SimpleSlider extends Component {
   render() {
@@ -22,18 +19,37 @@ export default class SimpleSlider extends Component {
       pauseOnHover: false,
       lazyLoad: true
     };
+
     return (
       <>
         <Slider ref={slider => (this.slider = slider)} {...settings}>
-          <div>
-            <img className={`rounded-md md:rounded-lg`} src={DesignToolFigma} alt=" Figma Design Tool" height="764" />
-          </div>
-          <div>
-            <img className={`rounded-md md:rounded-lg`} src={DesignToolSketch} alt=" Sketch Design Tool" height="764" />
-          </div>
-          <div>
-            <img className={`rounded-md md:rounded-lg`} src={DesignToolXD} alt=" Adobe XD Design Tool" height="764" />
-          </div>
+          <StaticImage
+            src={"../images/media/design-tool-showcase-figma@2x.png"}
+            alt="Figma Design Tool"
+            placeholder="blurred"
+            loading="eager"
+            layout="constrained"
+            height={764}
+            imgClassName={`rounded-md md:rounded-lg`}
+          />
+          <StaticImage
+            src="../images/media/design-tool-showcase-sketch@2x.png"
+            alt="Sketch Design Tool"
+            placeholder="blurred"
+            loading="eager"
+            layout="constrained"
+            height={764}
+            imgClassName={`rounded-md md:rounded-lg`}
+          />
+          <StaticImage
+            src="../images/media/design-tool-showcase-xd@2x.png"
+            alt="Adobe XD Design Tool"
+            placeholder="blurred"
+            loading="eager"
+            layout="constrained"
+            height={764}
+            imgClassName={`rounded-md md:rounded-lg`}
+          />
         </Slider>
       </>
     );
