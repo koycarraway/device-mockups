@@ -11,7 +11,7 @@ export default class SimpleSlider extends Component {
       infinite: true,
       slidesToShow: 1,
       speed: 1000,
-      dots: true,
+      dots: false,
       arrows: false,
       fade: true,
       autoplay: true,
