@@ -14,6 +14,7 @@ import AppleIPad from "../images/devices/apple/apple-ipad.png"
 import AppleIPadPro from "../images/devices/apple/apple-ipad-pro.png"
 import AppleIPadAir from "../images/devices/apple/apple-ipad-air-4.png"
 import AppleMacbookPro from "../images/devices/apple/macbook-pro.png"
+import AppleMacbookPro16 from "../images/devices/apple/macbook-pro-16.png"
 import AppleMacbookAir from "../images/devices/apple/macbook-air.png"
 import AppleProDisplayXDR from "../images/devices/apple/pro-display-xdr.png"
 import AppleIMac24 from "../images/devices/apple/imac-24.webp"
@@ -70,6 +71,7 @@ const IndexPage = () => (
         <DeviceThumbnail title="OnePlus 7T Pro" image={OnePlus7TPro} />
         <DeviceThumbnail title="OnePlus 8 Pro" image={OnePlus8Pro} />
       </div>
+      
       <h3 className={`text-lg font-semibold text-center mb-8 text-gray-500 dark:text-gray-400`}>Tablets</h3>
       <div className={`grid grid-cols-4 gap-2 lg:gap-12 mb-16`}>
         <DeviceThumbnail title="Apple iPad" image={AppleIPad} />
@@ -83,8 +85,9 @@ const IndexPage = () => (
       </div>
       <h3 className={`text-lg font-semibold text-center mb-8 text-gray-500 dark:text-gray-400`}>Laptops & Monitors</h3>
       <div className={`grid grid-cols-2 gap-3 lg:gap-12 mb-16`}>
-        <DeviceThumbnail title="Apple Macbook Pro" image={AppleMacbookPro} />
-        <DeviceThumbnail title="Apple Macbook Air" image={AppleMacbookAir} />
+        <DeviceThumbnail title="Apple MacBook Pro 16-inch" image={AppleMacbookPro16} />
+        <DeviceThumbnail title="Apple MacBook Pro 15-inch" image={AppleMacbookPro} />
+        <DeviceThumbnail title="Apple MacBook Air" image={AppleMacbookAir} />
         <DeviceThumbnail title="Google Pixelbook Go" image={GooglePixelbookGo} />
         <DeviceThumbnail title="Apple Pro Display XDR" image={AppleProDisplayXDR} />
         <DeviceThumbnail title="Apple iMac 24in" image={AppleIMac24} />
